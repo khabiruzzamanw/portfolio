@@ -1,0 +1,55 @@
+ .header-div{
+      height:50px;
+      width:100%;
+      position:relative;      
+      display:flex;
+      flex-direction:row;
+
+    }
+
+    .quick-go{
+      position:absolute;
+      right:50px;
+      top:20px;
+      display:flex;
+      flex-direction: row;
+      column-gap:40px;     
+
+    }
+
+    .header-div .quick-go  a { 
+      color:#DFD0B8;
+      text-decoration: none;
+      transition:all ease-in-out 0.15s ;
+    }
+
+     .header-div .quick-go  a:hover{
+      text-decoration: underline;
+      color:#DFD0B8;
+     }
+
+     .header-div .quick-go  a:active{
+      scroll-behavior: smooth;
+     }
+
+    .sign{
+      position:fixed;
+      top:10px;
+      left:10px;
+
+    }
+    .header-div .sign .home {
+      margin-block: 0px;
+      font-size:25px;
+      text-decoration: none;
+      border:none;
+      color:#DFD0B8;
+      cursor:pointer;
+      background-color: transparent;
+      
+    }
+
+    .header-div .sign .home a{
+      text-decoration: none;
+      color:#DFD0B8;
+    }
