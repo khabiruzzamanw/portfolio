@@ -18,14 +18,14 @@
     }
 
     .header-div .quick-go  a { 
-      color:#DFD0B8;
+      color:var(--font);
       text-decoration: none;
       transition:all ease-in-out 0.15s ;
     }
 
      .header-div .quick-go  a:hover{
       text-decoration: underline;
-      color:#DFD0B8;
+      color:var(--font);
      }
 
      .header-div .quick-go  a:active{
@@ -43,7 +43,7 @@
       font-size:25px;
       text-decoration: none;
       border:none;
-      color:#DFD0B8;
+      color:var(--font);
       cursor:pointer;
       background-color: transparent;
       
@@ -51,5 +51,5 @@
 
     .header-div .sign .home a{
       text-decoration: none;
-      color:#DFD0B8;
+      color:var(--font);
     }
