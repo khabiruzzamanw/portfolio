@@ -1,12 +1,20 @@
+:root{
+  /* --dark-bg:#2C3333;
+  --bg:#0E8388;
+  --font:#CBE4DE; */
 
+  --dark-bg: #222831;
+  --bg:#948979;
+  --font:#DFD0B8;
+}
 body{
       margin:0px;
       margin-block:0px;
       padding:0px;
       font-family:Arial;
-      background-color:#222831;
-      color:#DFD0B8;
-      text-shadow:1px 1px 0px #222831;
+      background-color:var(--dark-bg);
+      color:var(--font);
+      text-shadow:1px 1px 0px var(--dark-bg);
 
     }  
 
@@ -23,6 +31,6 @@ body{
     .divider{
       width:80%;
       height:2px;
-      background-color: #DFD0B8;
+      background-color: var(--font);
 
     }
