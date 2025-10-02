@@ -7,7 +7,7 @@
     }
 
     .multiple-projects .projects-section h1{
-      color:#DFD0B8;
+      color:var(--font);
       font-size:50px;
       margin: 20px 0px 50px 90vh;
       
@@ -59,7 +59,7 @@
     .project1{
       width:400px;
       height:500px;
-      background-color: #948979;
+      background-color: var(--bg);
       display: flex;
       justify-content: center;
       border:none;
@@ -69,13 +69,13 @@
     }
 
     .project1:hover{
-      box-shadow:4px 4px 10px #DFD0B8;
+      box-shadow:4px 4px 10px var(--font);
     }
 
     .project2{
       width:400px;
       height:500px;
-      background-color: #948979;
+      background-color: var(--bg);
       display: flex;
       justify-content: center;
       border:none;
@@ -85,13 +85,13 @@
     }
 
     .project2:hover{
-      box-shadow:4px 4px 10px #DFD0B8;
+      box-shadow:4px 4px 10px var(--font);
     }
 
     .project3{
       width:400px;
       height:500px;
-      background-color: #948979;
+      background-color: var(--bg);
       display: flex;
       justify-content: center;
       border:none;
@@ -101,7 +101,7 @@
     }
 
     .project3:hover{
-      box-shadow:4px 4px 10px #DFD0B8;
+      box-shadow:4px 4px 10px var(--font);
     }
 
 
@@ -151,7 +151,7 @@
     .project4{
       width:400px;
       height:500px;
-      background-color: #948979;
+      background-color: var(--bg);
       display: flex;
       justify-content: center;
       border:none;
@@ -161,13 +161,13 @@
     }
 
     .project4:hover{
-      box-shadow:4px 4px 10px #DFD0B8;
+      box-shadow:4px 4px 10px var(--font);
     }
 
     .project5{
       width:400px;
       height:500px;
-      background-color: #948979;
+      background-color: var(--bg);
       display: flex;
       justify-content: center;
       border:none;
@@ -177,13 +177,13 @@
     }
 
     .project5:hover{
-      box-shadow:4px 4px 10px #DFD0B8;
+      box-shadow:4px 4px 10px var(--font);
     }
 
     .project6{
       width:400px;
       height:500px;
-      background-color: #948979;
+      background-color: var(--bg);
       display: flex;
       justify-content: center;
       border:none;
@@ -193,7 +193,7 @@
     }
 
     .project6:hover{
-      box-shadow:4px 4px 10px #DFD0B8;
+      box-shadow:4px 4px 10px var(--font);
     }
 
 
