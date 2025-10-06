@@ -27,7 +27,7 @@
     .experience-section .skills .skills-line{
       width:60%;
       height:5px;
-      background-color: black;
+      background-color:  var(--bar-color);
       position:absolute;
       top:150px;
       display:flex;
@@ -38,21 +38,21 @@
    .experience-section .skills .skills-line .html-line{
     height:30px;
     width:2px;
-    background-color: black;
+    background-color: var(--bar-color);
 
    } 
 
    .experience-section .skills .skills-line .css-line{
     height:30px;
     width:2px;
-    background-color: black;
+    background-color: var(--bar-color);
 
    } 
 
     .experience-section .skills .skills-line .js-line{
     height:30px;
     width:2px;
-    background-color: black;
+    background-color: var(--bar-color);
 
    } 
    
@@ -123,4 +123,5 @@
     background-color: transparent;
     border:none;
    }
+
 
