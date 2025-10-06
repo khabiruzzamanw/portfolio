@@ -59,7 +59,7 @@
    .html{
     width:200px;
     height:300px;
-    border:2px solid var(--font);
+    border:2px solid var(--bar-color);
     margin-top:30px;
     position:relative;
     left:-100px;
@@ -73,7 +73,7 @@
     .css{
     width:200px;
     height:300px;
-    border:2px solid var(--font);
+    border:2px solid var(--bar-color);
     margin-top:30px;
     position:relative;
     left:-100px;
@@ -87,7 +87,7 @@
     .js{
     width:200px;
     height:300px;
-    border:2px solid var(--font);
+    border:2px solid var(--bar-color);
     margin-top:30px;
     position:relative;
     left:-100px;
@@ -123,5 +123,6 @@
     background-color: transparent;
     border:none;
    }
+
 
 
