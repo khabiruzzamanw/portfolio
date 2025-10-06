@@ -69,7 +69,7 @@
     }
 
     .project1:hover{
-      box-shadow:4px 4px 10px var(--font);
+      box-shadow:4px 4px 10px var(--bx-shdw);
     }
 
     .project2{
@@ -85,7 +85,7 @@
     }
 
     .project2:hover{
-      box-shadow:4px 4px 10px var(--font);
+      box-shadow:4px 4px 10px var(--bx-shdw);
     }
 
     .project3{
@@ -101,7 +101,7 @@
     }
 
     .project3:hover{
-      box-shadow:4px 4px 10px var(--font);
+      box-shadow:4px 4px 10px var(--bx-shdw);
     }
 
 
@@ -161,7 +161,7 @@
     }
 
     .project4:hover{
-      box-shadow:4px 4px 10px var(--font);
+      box-shadow:4px 4px 10px var(--bx-shdw);
     }
 
     .project5{
@@ -177,7 +177,7 @@
     }
 
     .project5:hover{
-      box-shadow:4px 4px 10px var(--font);
+      box-shadow:4px 4px 10px var(--bx-shdw);
     }
 
     .project6{
@@ -193,7 +193,8 @@
     }
 
     .project6:hover{
-      box-shadow:4px 4px 10px var(--font);
+      box-shadow:4px 4px 10px var(--bx-shdw);
     }
+
 
 
