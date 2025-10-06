@@ -3,9 +3,17 @@
   --bg:#0E8388;
   --font:#CBE4DE; */
 
-  --dark-bg: #222831;
+  /* --dark-bg: #222831;
   --bg:#948979;
   --font:#DFD0B8;
+  --txt-shdw:#ffffff;
+  --bx-shdw:#ffffff; */
+  --bg:#121212;
+  --content-bg:#1E1E1E;
+  --font-color:#FFFFFF;
+  --bar-color:#333333;
+  --txt-shdw:#121212;
+  --bx-shdw:#1C1C1C;
 }
 body{
       margin:0px;
@@ -14,7 +22,7 @@ body{
       font-family:Arial;
       background-color:var(--dark-bg);
       color:var(--font);
-      text-shadow:1px 1px 0px var(--dark-bg);
+      text-shadow:1px 1px 0px var(--txt-shdw);
 
     }  
 
@@ -34,3 +42,4 @@ body{
       background-color: var(--font);
 
     }
+
