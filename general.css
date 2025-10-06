@@ -39,8 +39,9 @@ body{
     .divider{
       width:80%;
       height:2px;
-      background-color: var(--font);
+      background-color: var(--bar-color);
 
     }
+
 
 
