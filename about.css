@@ -1,0 +1,75 @@
+.about-section{
+  width:100dvw;
+  height:100dvh;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  overflow: hidden;
+  padding:0 5rem;
+  position: relative;
+
+}
+
+.about-section .about{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  padding:0 20rem;
+
+}
+
+.about-section .about p{
+  padding:0 3rem;
+}
+
+
+.about-section .about img{
+  width:10em;
+  border-radius:5em;
+  border:2em solid black;
+  background-color: #fff;
+}
+
+.about-section .experience{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+    padding:0 20rem;
+}
+
+.about-section .experience .skill{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-section .experience .skill .languages img {
+
+  width:3rem;
+}
+
+.about-section .experience .skill .languages{
+  border:2px solid white;
+  padding:5rem;
+  margin-top:2rem;
+}
+.about-section .experience .experience-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.about-section .experience .experience-info{
+    border:2px solid white;
+  padding:5rem;
+  margin-top:2rem;
+}
+
+.about-section .experience .experience-info p{
+  padding:0 3rem;
+}
+
