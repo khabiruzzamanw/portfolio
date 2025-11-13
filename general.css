@@ -1,11 +1,16 @@
 :root{
-  --dark-bg:#121212;
-  --bg:#1E1E1E;
-  --font:#FFFFFF;
-  --red-font:crimson;
-  --bar-color:#333333;
-  --txt-shdw:#121212;
-  --bx-shdw:#1C1C1C;
+--dark-bg:#050505;
+--blur-bg-color:rgba(150, 150, 150, 0.25);
+/* --blur-bg-color:rgba(14, 199, 106, 0.25); */
+--bg-color:#1E1E1E;
+--card-bg-color:gray;
+--font-color:white;
+--red-font:crimson;
+--bar-color:#333333;
+--box-shadow-color:rgb(0, 0, 0);
+--text-shadow-color:black;
+--button-color:orange;
+--footer-bg-color:rgb(20, 20, 20);
 
 }
 
@@ -20,8 +25,8 @@
 body{
   font-family:Arial,sans-serif;
   background-color:var(--dark-bg);
-  color:var(--font);
-  text-shadow:1px 1px 0px var(--txt-shdw);
+  color:var(--font-color);
+  text-shadow:1px 1px 0px var(--text-shadow-color);
 
 } 
 

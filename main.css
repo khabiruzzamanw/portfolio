@@ -1,28 +1,74 @@
-main{
-  width:100dvw;
-  height:94dvh;
-  
+main {
+  position: relative;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-main .introduction{
-  height:94dvh;
+main .container {
+  position: relative;
+  width: 70dvw;
+  height:80dvh;
   display: flex;
+  flex-direction: row;
+  justify-content: center;  
+  align-items: center;
+  border: 3px solid var(--bar-color);
+  border-radius:2rem;
+  /* padding: 0px 20px 0px 20px; */
+  overflow-x: hidden;
+}
+
+main .container::before{
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: #ffffff15;
+  filter: blur(1000px);
+}
+
+main::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  background-color: var(--blur-bg-color);
+  /* background-image: linear-gradient(to bottom left, var(--blur-bg-color) ); */
+  filter: blur(1000px);
+  z-index: -1;
+}
+
+
+
+main section {
+  position:relative;
+  width: 100%;
+  display: flex;
+  gap: 50px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.introduction h1{
-  font-size: 5rem;
-  margin-bottom: 10px;
+main section p {
+  color: var(--font-color);
+  text-align: center;
 }
 
-.introduction h2{
-  font-size: 2.5rem;
-  margin-top: 10px;
+main section p:nth-child(1) {
+  /* font-size:3vw; */
+  font-size: 5em;
 }
 
-.introduction h2 .text-red{
-  color:var(--red-font);
+main section p:nth-child(2) {
+  /* font-size: 2vw; */
+  font-size:2em;
 }
 
+main section p .text-red {
+  color: var(--text-red);
+}
