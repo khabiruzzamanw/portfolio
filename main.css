@@ -70,5 +70,5 @@ main section p:nth-child(2) {
 }
 
 main section p .text-red {
-  color: var(--text-red);
+  color: var(--red-font);
 }
