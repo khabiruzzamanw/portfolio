@@ -1,198 +1,35 @@
- .multiple-projects{
-      width:100dvw;
-      position:relative;
+.project-section{
+  width:100%;
+  height:100dvh;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
-    }
+}
 
-    .multiple-projects .projects-section h1{
-      color:var(--font-color);
-      font-size:50px;
-      margin: 20px 0px 50px 90vh;
-      
-    }
+.project-section h2{
+  margin-bottom:5rem;
+  font-size: 2rem;
+}
 
+.project-grid{
+  max-width:80%;
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(450px,100%),1fr));
+  gap:2rem;
+}
 
-    .projects-row1{
-       width:100%;
-       height:600px;
-       position:relative;
-       display:flex;
-       flex-direction: row;
-       justify-content: space-around;
-       align-items: center;
-    }
+.project-card{
+  padding:3rem 5rem;
+  background-color:var(--card-bg-color);
+  border-radius:1rem;
+  box-shadow:0 0 20px transparent ;
+  transition:box-shadow 0.2s ease-in,transform 0.2s ease-in;
 
+}
 
-    #project1{
-      width:250px;
-      
-    }
-
-    #project1 h1{
-     margin-bottom:150px; 
-     margin-top:50px;
-     text-align: center;
-    }
-
-    #project2{
-      width:250px;
-    }
-
-    #project2 h1{
-     margin-bottom:150px; 
-     margin-top:50px;
-     text-align: center;
-    }
-
-    #project3{
-      width:250px;
-    }
-
-    #project3 h1{
-     margin-bottom:150px; 
-     margin-top:50px;
-     text-align: center;
-    }
-
-    .project1{
-      width:400px;
-      height:500px;
-      background-color: var(--card-bg-color);
-      display: flex;
-      justify-content: center;
-      border:none;
-      border-radius:20px;
-      transition:all ease-in-out 0.15s;
-      
-    }
-
-    .project1:hover{
-      box-shadow:4px 4px 10px var(--box-shadow-color);
-    }
-
-    .project2{
-      width:400px;
-      height:500px;
-      background-color:var(--card-bg-color);
-      display: flex;
-      justify-content: center;
-      border:none;
-      border-radius:20px;
-      transition:all ease-in-out 0.15s;
-      
-    }
-
-    .project2:hover{
-      box-shadow:4px 4px 10px var(--box-shadow);
-    }
-
-    .project3{
-      width:400px;
-      height:500px;
-      background-color:var(--card-bg-color);
-      display: flex;
-      justify-content: center;
-      border:none;
-      border-radius:20px;
-      transition:all ease-in-out 0.15s;
-      
-    }
-
-    .project3:hover{
-      box-shadow:4px 4px 10px var(--box-shadow);
-    }
-
-
-
-    .projects-row2{
-       width:100%;
-       height:600px;
-       position:relative; 
-       display:flex;
-       flex-direction: row;
-       justify-content: space-around;
-       align-items: center;
-    }
-
-
-    #project4{
-      width:250px;
-      
-    }
-
-    #project4 h1{
-     margin-bottom:150px; 
-     margin-top:50px;
-     text-align: center;
-    }
-
-    #project5{
-      width:250px;
-    }
-
-    #project5 h1{
-     margin-bottom:150px; 
-     margin-top:50px;
-     text-align: center;
-    }
-
-    #project6{
-      width:250px;
-    }
-
-    #project6 h1{
-     margin-bottom:150px; 
-     margin-top:50px;
-     text-align: center;
-    }
-
-    .project4{
-      width:400px;
-      height:500px;
-      background-color: var(--card-bg-color);
-      display: flex;
-      justify-content: center;
-      border:none;
-      border-radius:20px;
-      transition:all ease-in-out 0.15s;
-      
-    }
-
-    .project4:hover{
-      box-shadow:4px 4px 10px var(--box-shadow);
-    }
-
-    .project5{
-      width:400px;
-      height:500px;
-      background-color: var(--card-bg-color);
-      display: flex;
-      justify-content: center;
-      border:none;
-      border-radius:20px;
-      transition:all ease-in-out 0.15s;
-      
-    }
-
-    .project5:hover{
-      box-shadow:4px 4px 10px var(--box-shadow);
-    }
-
-    .project6{
-      width:400px;
-      height:500px;
-      background-color: var(--card-bg-color);
-      display: flex;
-      justify-content: center;
-      border:none;
-      border-radius:20px;
-      transition:all ease-in-out 0.15s;
-      
-    }
-
-    .project6:hover{
-      box-shadow:4px 4px 10px var(--box-shadow);
-    }
-
-
-
+.project-card:hover{
+  box-shadow:0 0 20px var(--box-shadow-color),0 0 10px var(--box-shadow-color),0 0 30px var(--box-shadow-color)   ;
+  transform: translateY(-10px);
+}

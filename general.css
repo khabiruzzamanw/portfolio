@@ -1,5 +1,7 @@
 :root{
+
 --dark-bg:#050505;
+--container-color:#ffffff15;
 --blur-bg-color:rgba(150, 150, 150, 0.25);
 /* --blur-bg-color:rgba(14, 199, 106, 0.25); */
 --bg-color:#1E1E1E;
@@ -18,23 +20,26 @@
   padding:0px;
   margin:0px;
   box-sizing: border-box;
-  text-decoration: none;
   border:none;
-
+  text-decoration: none;
+  outline:none;
 }
+
+img{
+  width:100%;
+  object-fit:contain;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
 body{
-  font-family:Arial,sans-serif;
+  font-family:Arial;
   background-color:var(--dark-bg);
   color:var(--font-color);
   text-shadow:1px 1px 0px var(--text-shadow-color);
 
-} 
 
-img{
-  width:100%;
-}
-
-
-
-
+}  
 

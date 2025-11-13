@@ -27,7 +27,7 @@ main .container::before{
   bottom:0;
   left:0;
   right:0;
-  background-color: #ffffff15;
+  background-color: var(--container-color);
   filter: blur(1000px);
 }
 

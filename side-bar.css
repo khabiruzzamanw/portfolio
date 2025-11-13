@@ -52,14 +52,10 @@ nav ul .li-item a::before {
   left:0;
   height:2px;
   width:0%;
-  transition:width 0.15s ease-out;
+  transition:width 0.2s ease-out;
 }
 
 
 nav ul .li-item a:hover::before{
   width:100%;
 }
-
-
-
- 

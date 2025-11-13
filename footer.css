@@ -1,195 +1,21 @@
 footer{
-  width:100dvw;
-  height:100dvh;
-  display:flex;
-  flex-direction: column;
-  position:relative;
-  justify-content: center;
-  align-items: center;
-  padding:0 20rem;
-
-} 
-
-.copyright{
-  position:absolute;
-  bottom:1rem;
-}
-
-.contact{
   width:100%;
-  display:flex;
-  justify-content:space-between;
-  align-items: center;
-
-}
-
-.contact img{
-  width:20px;
-}
-
-.contact .contact-info{
-  display:flex;
-  flex-direction: column;
-  justify-content: space-around;
-  border:0.5rem solid white;
-  padding:2rem;
-  
-}
-
-.contact .contact-info a{
-  color:var(--font);
-}
-
-.email p{
-
-  display:inline;
-}
-
-.phone-number p{
-  display:inline;
-}
-
-
-.leave-message{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height:50dvh;
   position:relative;
 }
 
-.leave-message p{
-  font-size: 2rem;
-  margin-bottom:2rem;
+footer div{
+ width:100%;
+ height:10rem;
+ background: var(--footer-bg-color);
+ position:absolute;
+ bottom:0;
+ display:flex;
+ justify-content: center;
+ align-items: flex-end;
+ border:1px solid var(--bar-color);
 }
 
-.leave-message .feedback{
-  padding:10rem;
-  border-radius:1rem;
+footer div p{
+margin-bottom:1rem;
 }
-
-.leave-message .submit{
-  position:absolute;
-  bottom:-5rem;
-  right:0;
-  padding:1rem 2rem;
-  border-radius:1.5rem;
-}
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- /* footer{
-   width:100dvw;
-   height:100dvh;
-   display:flex;
-   align-items: end;
-   position:relative;
-   
-  }
-  .contact{  
-    width:100%;    
-    height:200px;
-    background-color: var(--bg);
-    position:relative;
-    bottom:0px;
-    display:flex;
-      justify-content: space-between;
-    }
-
-    .right-section{
-      margin-top:25px;
-      margin-right:10px;
-     display:flex;
-     flex-direction: column;
-     row-gap:10px; 
-    }
-
-    .left-section{
-
-    } 
-    .copyright{
-    position:absolute;
-    bottom:5px;
-    left:5px;
-   }
-   
-   .footer-text{
-    margin-left:5px;
-     min-width:235px;
-
-   }
-
-
-
-    .email{
-
-    }
-    .email-image{
-     position:relative;
-     top:5px;
-
-   }
-
-   .phone-number{
-
-   }
-
-   .phone-number p{
-    display:inline-block;
-   }
-
-    .phone-image{
-     position:relative;
-     top:5px;
-   }
-
-   .linkedin-contact{
-
-   }
-
-    .linkedin-image-contact{
-     position:relative;
-     top:5px;
-   }
-
-   .github-contact{
-
-   }
-
-    .github-image-contact{
-     position:relative;
-     top:5px;
-   }
-    .contact p{
-    margin:0px;
-    padding:0px;
-    }
-
-    .contact a{
-      text-decoration: none;
-      color:var(--font);
-      transition:all ease-in-out 0.15s;
-    }
-
-    .contact a:hover{
-      text-decoration: underline;
-    }
-   .email-image,.phone-image,.linkedin-image-contact,.github-image-contact {
-    width:20px;
-    
-   } */
