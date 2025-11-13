@@ -26,7 +26,7 @@ ul .li-fixed-item {
 }
 
 ul .li-fixed-item a {
-  color:var(--text-red);
+  color:var(--red-font);
   font-size: 1.5rem;
 
 }
@@ -40,13 +40,13 @@ nav ul .li-item a {
 }
 
 nav ul .li-item a:hover {
-  color:var(--text-red);
+  color:var(--red-font);
 }
 
 
 nav ul .li-item a::before {
   content:"";
-  background-color: var(--text-red);
+  background-color: var(--red-font);
   position:absolute;
   bottom:0;
   left:0;
