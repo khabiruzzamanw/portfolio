@@ -24,12 +24,12 @@
   padding:3rem 5rem;
   background-color:var(--card-bg-color);
   border-radius:1rem;
-  box-shadow:0 0 20px transparent ;
+  box-shadow:0 0 0.8rem transparent,0 0 1.2rem transparent,0 0 2rem transparent ;
   transition:box-shadow 0.2s ease-in,transform 0.2s ease-in;
 
 }
 
 .project-card:hover{
-  box-shadow:0 0 20px var(--box-shadow-color),0 0 10px var(--box-shadow-color),0 0 30px var(--box-shadow-color)   ;
+  box-shadow:0 0 0.8rem var(--box-shadow-color),0 0 1.2rem var(--box-shadow-color),0 0 2rem var(--box-shadow-color)   ;
   transform: translateY(-10px);
 }
