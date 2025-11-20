@@ -1,21 +1,36 @@
-footer{
-  width:100%;
-  height:50dvh;
-  position:relative;
+footer {
+  width: 100%;
+  padding:2rem 0;
+  position: relative;
 }
 
-footer div{
- width:100%;
- height:10rem;
- background: var(--footer-bg-color);
- position:absolute;
- bottom:0;
- display:flex;
- justify-content: center;
- align-items: flex-end;
- border:1px solid var(--bar-color);
+footer div {
+  width: 100%;
+  height: 10rem;
+  background: var(--footer-bg-color);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border: 1px solid var(--bar-color);
 }
 
-footer div p{
-margin-bottom:1rem;
+footer div p {
+  margin-bottom: 1rem;
+}
+
+
+@media screen and (width < 550px){
+  footer{
+  padding:1rem 0 0 0;
+  }
+
+  footer div {
+  height:2rem;
+
+}
+footer div p {
+  margin-bottom:0.2rem;
+}
 }

@@ -1,61 +1,84 @@
 aside {
-height:100%;
+  height: 100%;
 
 }
 
 nav {
-  height:100%;
-  
+  height: 100%;
+
 }
 
 ul {
-  height:100%;
-  display:flex;
-  flex-direction:column;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   list-style: none;
-  justify-content:space-around ;
-  align-items:start;
-  padding:12rem 0;
+  justify-content: space-around;
+  align-items: start;
+  padding: 12rem 0;
 
 }
 
 ul .li-fixed-item {
-  position:fixed;
-  top:15px;
-  left:15px;
+  position: fixed;
+  top: 15px;
+  left: 15px;
 }
 
 ul .li-fixed-item a {
-  color:var(--red-font);
+  color: var(--red-font);
   font-size: 1.5rem;
 
 }
 
 nav ul .li-item a {
-  padding:10px;
-  color:var(--font-color);
-  font-size:1em;
-  position:relative;
+  padding: 10px;
+  color: var(--font-color);
+  font-size: 1em;
+  position: relative;
 
 }
 
 nav ul .li-item a:hover {
-  color:var(--red-font);
+  color: var(--red-font);
 }
 
 
 nav ul .li-item a::before {
-  content:"";
+  content: "";
   background-color: var(--red-font);
-  position:absolute;
-  bottom:0;
-  left:0;
-  height:2px;
-  width:0%;
-  transition:width 0.2s ease-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  transition: width 0.2s ease-out;
 }
 
 
-nav ul .li-item a:hover::before{
+nav ul .li-item a:hover::before {
+  width: 100%;
+}
+
+
+@media screen and (width < 550px){
+  aside {
   width:100%;
+  padding-bottom:4rem;
+
+}
+
+nav {
+  width:100%;
+}
+
+ul {
+  width:100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  padding: 2rem 0;
+
+}
+
 }
