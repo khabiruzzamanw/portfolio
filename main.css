@@ -1,11 +1,11 @@
 main {
-      width:100%;
+  width: 100%;
   position: relative;
   /* height: 100dvh; just now  */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding:6rem 0;
+  padding: 6rem 0;
 }
 
 main .container {
@@ -66,39 +66,37 @@ main section p .text-red {
 }
 
 main section p:nth-child(1) {
-  /* font-size:3vw; */
-  font-size: 5em;
+  font-size: calc(var(--h1));
 }
 
 main section p:nth-child(2) {
-  /* font-size: 2vw; */
-  font-size: 2em;
+  font-size: calc(var(--h2));
 }
 
-@media screen and (width < 550px){
-  main{
-    padding:4rem 0 2rem 0;
+@media screen and (width < 550px) {
+  main {
+    padding: 5rem 0 2rem 0;
   }
 
-main .container {
-  flex-direction: column;
-  justify-content:start;
-  align-items:center;
-  width: 90%;
-  height:100%;
-}
+  main .container {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+  }
 
-main section {
-  padding-bottom:10rem;
-  gap: 2rem;
+  main section {
+    padding-bottom: 10rem;
+    gap: 2rem;
 
-}
+  }
 
-main section p:nth-child(1) {
-  font-size:2em;
-}
+  main section p:nth-child(1) {
+    font-size: calc(var(--h1));
+  }
 
-main section p:nth-child(2) {
-  font-size:1.2em;
-}
+  main section p:nth-child(2) {
+    font-size: calc(var(--h2));
+  }
 }

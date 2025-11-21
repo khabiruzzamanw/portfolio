@@ -1,6 +1,6 @@
 footer {
   width: 100%;
-  padding:2rem 0;
+  padding: 2rem 0;
   position: relative;
 }
 
@@ -18,19 +18,22 @@ footer div {
 
 footer div p {
   margin-bottom: 1rem;
+  font-size: calc(var(--font-size-4));
 }
 
 
-@media screen and (width < 550px){
-  footer{
-  padding:1rem 0 0 0;
+@media screen and (width < 550px) {
+  footer {
+    padding: 1rem 0 0 0;
   }
 
   footer div {
-  height:2rem;
+    height: 2rem;
 
-}
-footer div p {
-  margin-bottom:0.2rem;
-}
+  }
+
+  footer div p {
+    margin-bottom: 0.2rem;
+    font-size: calc(var(--font-size-5));
+  }
 }

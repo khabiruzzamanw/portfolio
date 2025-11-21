@@ -27,14 +27,14 @@ ul .li-fixed-item {
 
 ul .li-fixed-item a {
   color: var(--red-font);
-  font-size: 1.5rem;
+  font-size: calc(var(--font-size-2));
 
 }
 
 nav ul .li-item a {
   padding: 10px;
   color: var(--font-color);
-  font-size: 1em;
+  font-size: calc(var(--font-size-4));
   position: relative;
 
 }
@@ -61,24 +61,24 @@ nav ul .li-item a:hover::before {
 }
 
 
-@media screen and (width < 550px){
+@media screen and (width < 550px) {
   aside {
-  width:100%;
-  padding-bottom:4rem;
+    width: 100%;
+    padding-bottom: 4rem;
 
-}
+  }
 
-nav {
-  width:100%;
-}
+  nav {
+    width: 100%;
+  }
 
-ul {
-  width:100%;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: start;
-  padding: 2rem 0;
+  ul {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    padding: 2rem 0;
 
-}
+  }
 
 }
