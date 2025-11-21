@@ -12,7 +12,7 @@ footer div {
   bottom: 0;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: end;
   border: 1px solid var(--bar-color);
 }
 
