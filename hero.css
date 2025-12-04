@@ -1,0 +1,143 @@
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15rem 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10rem;
+  align-items: center;
+  padding: 10rem 0 2rem;
+  border: 0.2rem solid var(--bar-color);
+  border-radius: 2rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--container-color);
+  filter: blur(1000px);
+}
+
+.hero::after {
+  content: "";
+  width: 80%;
+  height: 40%;
+  position: absolute;
+  background-color: var(--blur-bg-color);
+  /* background-image: linear-gradient(to bottom left, var(--blur-bg-color) ); */
+  filter: blur(1000px);
+  z-index: -1;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.media {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.media a i {
+  font-size: 2rem;
+  color: var(--icon-color);
+}
+
+.intro p {
+  color: var(--font-color);
+  text-align: center;
+}
+
+.intro p .text-red {
+  color: var(--red-font);
+}
+
+.intro p:nth-child(1) {
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+}
+
+.intro p:nth-child(2) {
+  font-size: clamp(1rem, 1.5vw, 1.8rem);
+}
+
+@media screen and (width < 1100px) {
+  .hero {
+    margin: 12rem 0;
+  }
+  .container {
+    padding: 9rem 0 2rem;
+    gap: 9rem;
+  }
+}
+@media screen and (width < 1000px) {
+  .hero {
+    margin: 10rem 0;
+  }
+  .container {
+    padding: 8rem 0 2rem;
+    gap: 8rem;
+  }
+}
+@media screen and (width < 900px) {
+  .hero {
+    margin: 8rem 0;
+  }
+  .container {
+    padding: 7rem 0 2rem;
+    gap: 7rem;
+  }
+}
+@media screen and (width < 800px) {
+  .hero {
+    margin: 6rem 0;
+  }
+  .container {
+    padding: 6rem 0 2rem;
+    gap: 6rem;
+  }
+}
+@media screen and (width < 700px) {
+  .hero {
+    margin: 4rem 0;
+  }
+  .container {
+    padding: 5rem 0 2rem;
+    gap: 5rem;
+  }
+}
+
+@media screen and (width < 600px) {
+  /* .hero {
+    margin: 3rem 0;
+  } */
+  /* .container {
+  padding:2rem 0;
+
+  } */
+}
+@media screen and (width < 500px) {
+  /* .hero {
+    margin: 2rem 0;
+  } */
+  /* .container {
+  padding:2rem 0;
+
+  } */
+}

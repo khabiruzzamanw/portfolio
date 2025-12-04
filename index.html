@@ -2,222 +2,177 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="general.css">
-  <link rel="stylesheet" href="side-bar.css">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="about.css">
-  <link rel="stylesheet" href="projects.css">
-  <link rel="stylesheet" href="contact.css">
-  <link rel="stylesheet" href="footer.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="general.css" />
+  <link rel="stylesheet" href="side-bar.css" />
+  <link rel="stylesheet" href="hero.css" />
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="project.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
-
 </head>
 
 <body>
-  <main id="home">
-    <div class="container">
+  <main>
+    <header>
+      <nav>
+        <ul>
+          <li class="kr"><a href="#home">Kr</a></li>
+          <li class="li-item"><a href="./index.html">Porfolio</a></li>
+          <li class="li-item"><a href="./projects.html">Projects</a></li>
+          <li class="li-item"><a href="./contribution.html">Contribution</a></li>
+          <li class="li-item">
+            <input type="radio" name="dark" id="#dark" />
+          </li>
+          <li class="li-item">
+            <input type="radio" name="light" id="#light" />
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <aside>
-        <nav>
-          <ul>
-            <li class="li-fixed-item"> <a href="#home">Kr</a></li>
-            <li class="li-item"> <a href="#about">About</a></li>
-            <li class="li-item"> <a href="#projects">Projects</a></li>
-            <li class="li-item"> <a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="intro">
+          <p>Hi, I'm Khabiruzzaman.&#60;&sol;br&#62;</p>
 
-      </aside>
-      <section>
-        <p>
-          Hi, I'm Khabiruzzaman.&#60;&sol;br&#62;
-        </p>
+          <p>
+            I'm a
+            <span class="developer-text-div">&#60;&sol;front-<span class="text-red">end</span>&#62;
+              developer.</span>
+          </p>
+        </div>
 
-        <p>
-          I'm a <span class="developer-text-div">&#60;&sol;front-<span class="text-red">end</span>&#62;
-            developer.</span>
-        </p>
-      </section>
-    </div>
+        <div class="media">
+          <a href="#">
+            <i class="ti ti-brand-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="ti ti-brand-github"></i>
+          </a>
+          <a href="#">
+            <i class="ti ti-brand-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="ti ti-brand-x"></i>
+          </a>
+          <a href="#">
+            <i class="ti ti-mail"></i>
+          </a>
+          <a href="#">
+            <i class="ti ti-brand-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="me">
+          <img src="./images/developer-image.png" alt="" />
+
+          <div class="me-buttons">
+            <a href="#">Download resume</a>
+            <a href="#">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="about-me">
+          <div class="about">
+            <p>
+              Am Front-End Developer passionate about building beautiful,
+              functional, and user-centric web experiences. I specialize in
+              turning design concepts into high-performance, responsive code
+              using Html (5), JavaScript , and modern CSS. Constantly seeking
+              opportunities to learn new technologies and deliver exceptional
+              digital solutions.
+            </p>
+          </div>
+
+          <div class="skill">
+            <div class="lang">
+              <img src="./images/html.png" alt="" class="" />
+              <img src="./images/css.png" alt="" class="" />
+              <img src="./images/js.png" alt="" class="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section" id="project">
+      <div class="project-grid">
+
+        <div class="project-card project-card1">
+          <div class="project-preview">
+            <img src="./images/project-1-mockup.png" alt="" />
+          </div>
+
+          <div class="project-info">
+            <h3>Project name</h3>
+            <p>
+              Responsive Profile Card UI built with [HTML/CSS]. Focuses on visual hierarchy, clean layout techniques,
+              and a cohesive dark color palette to display personal information and social links.
+            </p>
+            <a href="./project-1.html" target="_blank">Get details</a>
+          </div>
+        </div>
+
+        <div class="project-card project-card1">
+          <div class="project-preview">
+            <img src="./images/demo.png" alt="" />
+          </div>
+
+          <div class="project-info">
+            <h3>Project name</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              nisi minima veniam tempore expedita cupiditate, cumque animi id
+              maxime excepturi aspernatur, sed veritatis quo velit eaque
+              repudiandae a, recusandae eius.
+            </p>
+            <a href="#">Get details</a>
+          </div>
+        </div>
+
+        <div class="project-card project-card1">
+          <div class="project-preview">
+            <img src="./images/demo.png" alt="" />
+          </div>
+
+          <div class="project-info">
+            <h3>Project name</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              nisi minima veniam tempore expedita cupiditate, cumque animi id
+              maxime excepturi aspernatur, sed veritatis quo velit eaque
+              repudiandae a, recusandae eius.
+            </p>
+            <a href="#">Get details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <div class="leave-message">
+          <label for="leave-message"> Send me a message </label>
+          <textarea name="" id="" placeholder="Write your message...."></textarea>
+          <button>Send</button>
+        </div>
+      </div>
+    </section>
   </main>
-
-  <section class="about-section" id="about">
-    <div class="about-container">
-      <h2>
-        About
-      </h2>
-      <div class="about-content">
-        <div class="skill">
-          <h3>Skill</h3>
-          <div class="lang">
-            <img src="./images/html.png" alt="" class="">
-            <img src="./images/css.png" alt="" class="">
-            <img src="./images/js.png" alt="" class="">
-          </div>
-
-        </div>
-
-        <div class="experience">
-          <h3>Experience</h3>
-          <div class="experience-info">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, sit officia cupiditate aliquid
-              reprehenderit commodi voluptatum vitae tempora labore ratione!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, sit officia cupiditate aliquid
-              reprehenderit commodi voluptatum vitae tempora labore ratione!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, sit officia cupiditate aliquid
-              reprehenderit commodi voluptatum vitae tempora labore ratione!
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="project-section" id="projects">
-    <h2>
-      Project
-    </h2>
-    <div class="project-grid">
-      <div class="project-card ">
-        <div class="project-info">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nisi minima veniam tempore expedita
-            cupiditate, cumque animi id maxime excepturi aspernatur, sed veritatis quo velit eaque repudiandae a,
-            recusandae eius.
-
-          </p>
-        </div>
-      </div>
-
-      <div class="project-card ">
-        <div class="project-info">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nisi minima veniam tempore expedita
-            cupiditate, cumque animi id maxime excepturi aspernatur, sed veritatis quo velit eaque repudiandae a,
-            recusandae eius.
-
-          </p>
-        </div>
-      </div>
-
-      <div class="project-card ">
-        <div class="project-info">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nisi minima veniam tempore expedita
-            cupiditate, cumque animi id maxime excepturi aspernatur, sed veritatis quo velit eaque repudiandae a,
-            recusandae eius.
-
-          </p>
-        </div>
-      </div>
-
-      <div class="project-card ">
-        <div class="project-info">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nisi minima veniam tempore expedita
-            cupiditate, cumque animi id maxime excepturi aspernatur, sed veritatis quo velit eaque repudiandae a,
-            recusandae eius.
-
-          </p>
-        </div>
-      </div>
-
-      <div class="project-card ">
-        <div class="project-info">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nisi minima veniam tempore expedita
-            cupiditate, cumque animi id maxime excepturi aspernatur, sed veritatis quo velit eaque repudiandae a,
-            recusandae eius.
-
-          </p>
-        </div>
-      </div>
-
-      <div class="project-card ">
-        <div class="project-info">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nisi minima veniam tempore expedita
-            cupiditate, cumque animi id maxime excepturi aspernatur, sed veritatis quo velit eaque repudiandae a,
-            recusandae eius.
-
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact-section" id="contact">
-    <div class="contact-container">
-      <div class="contact-info">
-        <div class="contact-card">
-          <div class="card-front">
-            <h3>To hire me</h3>
-
-
-          </div>
-
-          <div class="card-back">
-
-
-            <h3 class="card-back-title">
-              To hire me
-            </h3>
-
-            <div class="email">
-              <img src="./images/mail.png" class="email-image">
-              <a href="" target="_blank">khabiruzzamanonwork@gmail.com</a>
-
-            </div>
-
-            <div class="phone-number">
-              <img src="./images/phone.png" class="phone-image">
-              <a href="" target="_blank">+8801853433100</a>
-
-            </div>
-
-            <div class="linkedin-contact">
-              <img src="./images/brand-linkedin.png" class="linkedin-image-contact">
-              <a href="https://www.linkedin.com/in/khabiruzzaman-w-a90799384/" target="_blank">
-                Linkedin
-              </a>
-            </div>
-
-            <div class="github-contact">
-              <img src="./images/brand-github.png" class="github-image-contact">
-              <a href="https://github.com/khabiruzzamanw" target="_blank">
-                Github
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="leave-message">
-        <label for="leave-message">
-          Send me a message
-        </label>
-        <textarea name="" id="" placeholder="Write your message...."></textarea>
-        <input type="submit" value="Send">
-      </div>
-    </div>
-  </section>
 
   <footer>
     <div class="copyright">
-      <p>
-        copyright is reserved &copy; Khabiruzzaman
-      </p>
+      <p>copyright is reserved &copy; Khabiruzzaman</p>
     </div>
   </footer>
-
 </body>
 
 </html>

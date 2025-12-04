@@ -1,0 +1,117 @@
+:root {
+  --dark-bg: #111111;
+  --bg-color: #333333;
+  --blur-bg-color: rgba(255, 255, 255, 0);
+  --card-bg-color: #333333;
+  --container-color: #ffffff15;
+  --font-color: #f2f2f2;
+  --hovered-font-color: #f2f2f2;
+  --active-font-color: #f2f2f2;
+  --red-font: crimson;
+  --bar-color: #333333;
+  --thin-border-color: rgba(255, 255, 255, 0.15);
+  --box-shadow-color: rgb(0, 0, 0);
+  --text-shadow-color: black;
+  --icon-color: #333333;
+  --button-color: #5f7470;
+  --hovered-button-color: #73877b;
+  --active-button-color: #839788;
+  --footer-bg-color: rgb(20, 20, 20);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial;
+  background-color: var(--dark-bg);
+  color: var(--font-color);
+  text-shadow: 1px 1px 0px var(--text-shadow-color);
+  font-size: calc(var(--p));
+  /* padding: 0 25vw; */
+    padding: 0 30vw;
+}
+
+header {
+  width: 100%;
+  align-self: flex-start;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+
+nav {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: var(--blur-bg-color);
+  /* background-color:rgba(150, 150, 150, 0.35); */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0 0 1rem 1rem;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+ul .kr {
+  margin-right: auto;
+}
+
+ul .kr a {
+  color: var(--red-font);
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  position: relative;
+}
+
+nav ul .li-item a {
+  color: var(--font-color);
+  font-size: clamp(0.8rem, 0.85vw, 1rem);
+  position: relative;
+}
+
+nav ul .li-item a::before {
+  content: "";
+  background-color: var(--red-font);
+  position: absolute;
+  bottom: 0;
+  left: -0.2rem;
+  height: 2px;
+  width: 0%;
+  transition: width 0.3s ease-out;
+}
+
+nav ul .li-item a:hover::before {
+  width: 105%;
+}
+
+@media screen and (width < 800px) {
+}
+
+@media screen and (width < 450px) {
+  ul {
+    gap: 1rem;
+  }
+}

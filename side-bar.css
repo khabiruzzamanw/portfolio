@@ -1,85 +1,68 @@
-aside {
-  height: 100%;
-
+header {
+  width: 100%;
+  align-self: flex-start;
+  position: sticky;
+  z-index: 100;
+  top: 0;
 }
 
 nav {
-  height: 100%;
-
+  width: 100%;
+  padding: 1rem 0;
+  background-color: var(--blur-bg-color);
+  /* background-color:rgba(150, 150, 150, 0.35); */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0 0 1rem 1rem;
 }
 
 ul {
-  height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   list-style: none;
-  justify-content: space-around;
-  align-items: start;
-  padding: 12rem 0;
-
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
 }
 
-ul .li-fixed-item {
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  z-index:100;
+ul .kr {
+  margin-right: auto;
 }
 
-ul .li-fixed-item a {
+ul .kr a {
   color: var(--red-font);
-  font-size: calc(var(--font-size-2));
-
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  position: relative;
 }
 
 nav ul .li-item a {
-  padding: 10px;
   color: var(--font-color);
-  font-size: calc(var(--font-size-4));
+  font-size: clamp(0.8rem, 0.85vw, 1rem);
   position: relative;
-
 }
-
-nav ul .li-item a:hover {
-  color: var(--red-font);
-}
-
 
 nav ul .li-item a::before {
   content: "";
   background-color: var(--red-font);
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -0.2rem;
   height: 2px;
   width: 0%;
   transition: width 0.3s ease-out;
 }
 
-
 nav ul .li-item a:hover::before {
-  width: 100%;
+  width: 105%;
 }
 
+@media screen and (width < 800px) {
+}
 
-@media screen and (width < 550px) {
-  aside {
-    width: 100%;
-    padding-bottom: 4rem;
-
-  }
-
-  nav {
-    width: 100%;
-  }
-
+@media screen and (width < 450px) {
   ul {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: start;
-    padding: 2rem 0;
-
+    gap: 1rem;
   }
-
 }

@@ -1,17 +1,22 @@
 :root {
-
-  --dark-bg: #050505;
+  --dark-bg: #111111;
+  --bg-color: #333333;
+  --blur-bg-color: rgba(255, 255, 255, 0);
+  --card-bg-color: #00000005;
   --container-color: #ffffff15;
-  --blur-bg-color: rgba(150, 150, 150, 0.25);
-  /* --blur-bg-color:rgba(14, 199, 106, 0.25); */
-  --bg-color: #1E1E1E;
-  --card-bg-color: gray;
-  --font-color: white;
+  --font-color: #f2f2f2;
+  --hovered-font-color: #f2f2f2;
+  --active-font-color: #f2f2f2;
   --red-font: crimson;
   --bar-color: #333333;
-  --box-shadow-color: rgb(0, 0, 0);
+  --thin-border-color: rgba(255, 255, 255, 0.15);
+  --box-shadow-color: rgba(150, 150, 150, 0.01);
   --text-shadow-color: black;
-  --button-color: orange;
+  --icon-color: #333333;
+  --button-color: #5f7470;
+  --transparent-button-color: rgba(255, 255, 255, 0);
+  --hovered-button-color: #73877b;
+  --active-button-color: #839788;
   --footer-bg-color: rgb(20, 20, 20);
 
   --font-size-1: 3rem;
@@ -24,7 +29,6 @@
   --h2: 2.5rem;
   --h3: 1.5rem;
   --p: 1rem;
-
 }
 
 * {
@@ -37,7 +41,7 @@
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   object-fit: contain;
 }
 
@@ -51,21 +55,53 @@ body {
   color: var(--font-color);
   text-shadow: 1px 1px 0px var(--text-shadow-color);
   font-size: calc(var(--p));
-
-
+  /* padding: 0 25vw; */
+  padding: 0 30vw;
 }
 
-@media screen and (width < 550px) {
-  :root {
-    --font-size-1: 2rem;
-    --font-size-2: 1.5rem;
-    --font-size-3: 1.2rem;
-    --font-size-4: 0.8rem;
-    --font-size-5: 0.6rem;
+@media screen and (width < 1200px) {
+  body {
+    padding: 0 22vw;
+  }
+}
 
-    --h1: 2rem;
-    --h2: 1.2rem;
-    --h3: 0.9rem;
-    --p: 0.75rem;
+@media screen and (width < 1100px) {
+  body {
+    padding: 0 20vw;
+  }
+}
+@media screen and (width < 1000px) {
+  body {
+    padding: 0 18vw;
+  }
+}
+@media screen and (width < 900px) {
+  body {
+    padding: 0 16vw;
+  }
+}
+@media screen and (width < 800px) {
+  body {
+    padding: 0 14vw;
+  }
+}
+@media screen and (width < 700px) {
+  body {
+    padding: 0 12vw;
+  }
+}
+@media (width < 600px) {
+  body {
+    padding: 0 10vw;
+  }
+}
+@media (width < 500px) {
+  body {
+    padding: 0 7vw;
+  }
+}
+@media (width < 400px) {
+  body {
+    padding: 0 4vw;
   }
 }
