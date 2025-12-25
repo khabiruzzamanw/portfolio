@@ -22,6 +22,16 @@
     0 0 30px var(--box-shadow-color);
 }
 
+.project-preview{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-preview img{
+  object-fit: cover;
+}
+
 .project-info {
   display: flex;
   flex-direction: column;
