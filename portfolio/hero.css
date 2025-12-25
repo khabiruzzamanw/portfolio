@@ -36,7 +36,6 @@
   height: 40%;
   position: absolute;
   background-color: var(--blur-bg-color);
-  /* background-image: linear-gradient(to bottom left, var(--blur-bg-color) ); */
   filter: blur(1000px);
   z-index: -1;
 }

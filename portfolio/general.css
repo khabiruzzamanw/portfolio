@@ -4,6 +4,7 @@
   --blur-bg-color: rgba(255, 255, 255, 0);
   --card-bg-color: #00000005;
   --container-color: #ffffff15;
+  --image-bg-color:rgb(20, 20, 20);
   --font-color: #f2f2f2;
   --hovered-font-color: #f2f2f2;
   --active-font-color: #f2f2f2;
@@ -14,10 +15,11 @@
   --text-shadow-color: black;
   --icon-color: #333333;
   --button-color: #5f7470;
-  --transparent-button-color: rgba(255, 255, 255, 0);
+  --transparent-button-color: rgba(50, 50, 50, 0.50);
   --hovered-button-color: #73877b;
   --active-button-color: #839788;
   --footer-bg-color: rgb(20, 20, 20);
+  --footer-font-color: rgb(65, 65, 65);
 
   --font-size-1: 3rem;
   --font-size-2: 2rem;
@@ -42,7 +44,7 @@
 
 img {
   max-width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 html {

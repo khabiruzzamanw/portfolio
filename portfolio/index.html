@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=open_in_new"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <nav>
+          <ul>
+            <li class="kr"><a href="#home">Kr</a></li>
+            <li class="li-item">
+              <a href="/portfolio/index.html">Porfolio</a>
+            </li>
+            <li class="li-item">
+              <a href="/projects/projects.html">Projects</a>
+            </li>
+            <li class="li-item">
+              <a href="/contribution/contribution.html">Contribution</a>
+            </li>
+            <li class="li-item">
+              <label for="theme">Theme</label>
+              <input type="radio" name="" id="#theme" />
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="intro">
+            <p>Hi, I'm Khabiruzzaman.&#60;&sol;br&#62;</p>
+
+            <p>
+              I'm a
+              <span class="developer-text-div"
+                >&#60;&sol;front-<span class="text-red">end</span>&#62;
+                developer.</span
+              >
+            </p>
+          </div>
+
+          <div class="media">
+            <a href="#">
+              <i class="ti ti-brand-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="ti ti-brand-github"></i>
+            </a>
+            <a href="#">
+              <i class="ti ti-brand-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="ti ti-brand-x"></i>
+            </a>
+            <a href="#">
+              <i class="ti ti-mail"></i>
+            </a>
+            <a href="#">
+              <i class="ti ti-brand-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="about-container">
+          <div class="me">
+            <img src="/images/me-dev.png" alt="" />
+
+            <div class="me-buttons">
+              <a href="#">Download resume</a>
+              <a href="#">Get in touch</a>
+            </div>
+          </div>
+
+          <div class="about-me">
+            <div class="about">
+              <p>
+                Am Front-End Developer passionate about building beautiful,
+                functional, and user-centric web experiences. I specialize in
+                turning design concepts into high-performance, responsive code
+                using Html (5), JavaScript , and modern CSS. Constantly seeking
+                opportunities to learn new technologies and deliver exceptional
+                digital solutions.
+              </p>
+            </div>
+
+            <div class="skill">
+              <div class="lang">
+                <p class="skills html">HTML 5</p>
+                <p class="skills css">CSS 3</p>
+                <p class="skills js">JavaScript</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section" id="project">
+        <div class="project-grid">
+          <div class="project-card project-card1">
+            <div class="project-preview">
+              <img src="/images/weatherCheckerCardPreview.png" alt="" />
+            </div>
+
+            <div class="project-info">
+              <h3>Weather Checker</h3>
+              <p>
+                A modern, responsive weather application built with vanilla
+                HTML, CSS, and JavaScript. Fetches real-time weather data from
+                the OpenWeatherMap API.
+              </p>
+              <a href="#" target="_blank"
+                ><i class="ti ti-brand-github"></i
+                ><i class="ti ti-external-link"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project-card project-card1">
+            <div class="project-preview">
+              <img src="/images/profileCardPreview.png" alt="" />
+            </div>
+
+            <div class="project-info">
+              <h3>Guess the number</h3>
+              <p>
+                A sleek, interactive web application that challenges users to
+                guess a randomly generated number within a specific range. This
+                project focuses on high-performance logic and real-time user
+                feedback.
+              </p>
+              <a href="#" target="_blank"
+                ><i class="ti ti-brand-github"></i
+                ><i class="ti ti-external-link"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project-card project-card1">
+            <div class="project-preview">
+              <img src="/images/profileCardPreview.png" alt="" />
+            </div>
+
+            <div class="project-info">
+              <h3>Profile Card</h3>
+              <p>
+                Responsive Profile Card UI built with [HTML/CSS]. Focuses on
+                visual hierarchy, clean layout techniques, and a cohesive dark
+                color palette to display personal information and social links.
+              </p>
+              <a href="#" target="_blank"
+                ><i class="ti ti-brand-github"></i
+                ><i class="ti ti-external-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-container">
+          <div class="leave-email">
+            <label for="leaveEmail">Email Address</label>
+            <input type="text" name="" id="leaveEmail" />
+          </div>
+          <div class="leave-message">
+            <label for="leaveMessage"> Send me a message </label>
+            <textarea
+              name=""
+              id="leaveMessage"
+              placeholder="Write your message...."
+            ></textarea>
+            <button>Send</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="copyright">
+        <p>copyright is reserved &copy; Khabiruzzaman</p>
+      </div>
+    </footer>
+  </body>
+</html>

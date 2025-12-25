@@ -4,19 +4,22 @@
   --blur-bg-color: rgba(255, 255, 255, 0);
   --card-bg-color: #00000005;
   --container-color: #ffffff15;
+  --image-bg-color:rgb(20, 20, 20);
   --font-color: #f2f2f2;
   --hovered-font-color: #f2f2f2;
   --active-font-color: #f2f2f2;
   --red-font: crimson;
-  --thin-border-color: rgba(255, 255, 255, 0.15);
   --bar-color: #333333;
+  --thin-border-color: rgba(255, 255, 255, 0.15);
   --box-shadow-color: rgba(150, 150, 150, 0.01);
   --text-shadow-color: black;
   --icon-color: #333333;
   --button-color: #5f7470;
+  --transparent-button-color: rgba(50, 50, 50, 0.50);
   --hovered-button-color: #73877b;
   --active-button-color: #839788;
   --footer-bg-color: rgb(20, 20, 20);
+  --footer-font-color: rgb(65, 65, 65);
 }
 
 * {
@@ -129,11 +132,11 @@ main {
 .project-card {
   background-color: var(--card-bg-color);
   backdrop-filter: blur(100px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 0.6rem;
+  border: 1px solid var(--thin-border-color);
   border-radius: 1rem;
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  overflow: hidden;
   box-shadow: 0 0 20px var(--box-shadow-color), 0 0 10px var(--box-shadow-color),
     0 0 30px var(--box-shadow-color);
 }
@@ -142,37 +145,33 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: end;
+  align-items: start;
   gap: 0.5rem;
-  padding: 2rem;
+  border-top: 1px solid var(--thin-border-color);
+  margin: 2rem;
+  padding:2rem 0 0 0 ;
 }
 
-.project-info h3 {
-  margin-right: auto;
+.project-card .project-info h3 {
   margin-bottom: 2rem;
+  font-size: 1.5rem;
 }
 
-.project-info a {
-  margin-top: auto;
-  background-color: var(--button-color);
-  padding: 1rem 1.5rem;
-  border-radius: 2rem;
+.project-card .project-info p {
+  padding: 0 1rem 1rem 0;
+}
+
+.project-card .project-info a {
+  width: 100%;
   color: var(--font-color);
-  transition: color 0.3s ease-out, background-color 0.2s ease-out;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.25rem;
 }
-
-.project-info a:hover {
-  background-color: var(--hovered-button-color);
-  color: var(--hovered-font-color);
-}
-
-.project-info a:active {
-  background-color: var(--active-button-color);
-  color: var(--active-font-color);
-}
-
-.project-preview img {
-  border-radius: 0.8rem 0 0 0.8rem;
+.project-card .project-info a i {
+  color: var(--icon-color);
+  font-size: 2rem;
 }
 
 @media screen and (width < 1200px) {

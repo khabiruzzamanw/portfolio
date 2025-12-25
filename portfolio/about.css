@@ -56,8 +56,9 @@
 
 .me img {
   width: 20rem;
-  background-color: #fff;
+  /* background-color: var(--image-bg-color); */
   border-top-left-radius: 1.2rem;
+  border-bottom:1px solid var(--thin-border-color);
 }
 
 .about-me {
@@ -67,8 +68,7 @@
   justify-content: space-between;
 }
 .about {
-  border-radius: 1rem;
-  padding: 0 2.5rem 0 0;
+  padding: 1rem 0 0.5rem 0 ;
 }
 
 .skill {
@@ -85,8 +85,11 @@
   gap: 1rem;
 }
 
-.skill img {
-  width: 2rem;
+.skill .lang .skills {
+  padding:0.5rem;
+  border:1px solid var(--bar-color);
+  border-radius:1rem;
+  box-shadow:  2px 2px 10px var(--box-shadow-color);
 }
 
 @media screen and (width < 850px) {

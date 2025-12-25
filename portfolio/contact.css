@@ -6,8 +6,29 @@
 .contact-section .contact-container {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.contact-container .leave-email {
+  width: 100%;
+}
+.contact-container .leave-email input {
+  width: 100%;
+  font-size: 1rem;
+  color: var(--font-color);
+  background-color: transparent;
+  border: 0.15rem solid var(--bar-color);
+  border-radius: 0.5rem;
+  min-height: 2.5rem;
+  padding: 0 0.25rem;
+  margin-top: 1rem;
+}
+
+.contact-container .leave-email label {
+  font-size: clamp(1.2rem, 1.2vw, 2rem);
 }
 
 .contact-container .leave-message {
@@ -20,16 +41,16 @@
 }
 
 .contact-container .leave-message label {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: clamp(1.2rem, 1.2vw, 2rem);
   margin-right: auto;
 }
 
 .contact-container .leave-message textarea {
   color: var(--font-color);
-  min-width: 100%;
+  width: 100%;
   min-height: 150px;
-  font-size: calc(var(--p));
+  font-size: 1rem;
   background-color: transparent;
   border-radius: 0.5rem;
   border: 0.2rem solid var(--bar-color);
