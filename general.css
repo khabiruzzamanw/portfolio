@@ -1,25 +1,14 @@
 :root {
-  --dark-bg: #111111;
-  --bg-color: #333333;
-  --blur-bg-color: rgba(255, 255, 255, 0);
-  --card-bg-color: #00000005;
-  --container-color: #ffffff15;
-  --image-bg-color:rgb(20, 20, 20);
+  --bg-color: #111111;
+  --bg-accent-up: #ffffff15;
+  --bg-accent-down: #ffffff15;
+  --glass-effect-color: rgba(255, 255, 255, 0);
+  --button-color: #333333;
   --font-color: #f2f2f2;
-  --hovered-font-color: #f2f2f2;
-  --active-font-color: #f2f2f2;
-  --red-font: crimson;
-  --bar-color: #333333;
-  --thin-border-color: rgba(255, 255, 255, 0.15);
+  --bar-color: rgba(255, 255, 255, 0.15);
+  /* --bar-color:#333333; */
+  --red-accent: crimson;
   --box-shadow-color: rgba(150, 150, 150, 0.01);
-  --text-shadow-color: black;
-  --icon-color: #333333;
-  --button-color: #5f7470;
-  --transparent-button-color: rgba(50, 50, 50, 0.50);
-  --hovered-button-color: #73877b;
-  --active-button-color: #839788;
-  --footer-bg-color: rgb(20, 20, 20);
-  --footer-font-color: rgb(65, 65, 65);
 
   --font-size-1: 3rem;
   --font-size-2: 2rem;
@@ -31,6 +20,19 @@
   --h2: 2.5rem;
   --h3: 1.5rem;
   --p: 1rem;
+}
+
+.light {
+  --bg-color: #eeeeee;
+  --bg-accent-up: #ff08d620;
+  --bg-accent-down: #0055ff25;
+  --glass-effect-color: rgba(255, 255, 255, 0);
+  --button-color: #005238;
+  --font-color: #0e0e0e;
+  --bar-color: rgba(0, 119, 255, 0.25);
+  /* --bar-color:#333333; */
+  --red-accent: crimson;
+  --box-shadow-color: rgba(0, 0, 0, 0.04);
 }
 
 * {
@@ -53,11 +55,9 @@ html {
 
 body {
   font-family: Arial;
-  background-color: var(--dark-bg);
+  background-color: var(--bg-color);
   color: var(--font-color);
-  text-shadow: 1px 1px 0px var(--text-shadow-color);
   font-size: calc(var(--p));
-  /* padding: 0 25vw; */
   padding: 0 30vw;
 }
 
