@@ -10,6 +10,7 @@ theme.addEventListener("click", () => {
   let themeData = document.body.getAttribute("class");
 
   if (themeData === "dark") {
+    document.body.removeAttribute("class", "dark");
     document.body.setAttribute("class", "light");
     theme.src = "/images/lightMode.svg";
   } else {
