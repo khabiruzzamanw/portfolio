@@ -1,6 +1,7 @@
 header {
   width: 100%;
   align-self: flex-start;
+  position: -webkit-sticky;
   position: sticky;
   z-index: 100;
   top: 0;
