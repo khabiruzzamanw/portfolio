@@ -52,6 +52,9 @@ img {
 html {
   scroll-behavior: smooth;
 }
+body, html {
+  overflow-x: clip; /* This prevents horizontal scroll without breaking sticky */
+}
 
 body {
   font-family: Arial;
