@@ -1,21 +1,20 @@
 header {
   width: 100%;
-  align-self: flex-start;
-  position: -webkit-sticky;
-  position: sticky;
-  z-index: 100;
+  position: -webkit-fixed;
+  position: fixed;
+  z-index: 1000;
   top: 0;
-}
-
-nav {
-  width: 100%;
-  padding: 1rem 0;
   background-color: var(--glass-effect-color);
   /* background-color:rgba(150, 150, 150, 0.35); */
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-bottom: 1px solid var(--bar-color);
   border-radius: 0 0 1rem 1rem;
+}
+
+nav {
+  width: 100%;
+  padding: 1rem 0;
 }
 
 ul {
