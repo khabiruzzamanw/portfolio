@@ -73,14 +73,20 @@
   border-color: var(--red-accent);
 }
 
-.contact-container .leave-message button {
+.leave-message .messageSendButton {
   font-size: calc(var(--font-size-4));
   cursor: pointer;
   background-color: var(--button-color);
   color: var(--font-color);
   padding: 0.5rem 2rem;
   border-radius: 1.5rem;
-  transition: color 0.3s ease-out, background-color 0.2s ease-out;
+  box-shadow: 0 0 0.5rem var(--box-shadow-color),
+    0 0 1rem var(--box-shadow-color), 0 0 2rem var(--box-shadow-color);
+  transition: box-shadow 0.2s ease-out;
+}
+
+.leave-message .messageSendButton:hover {
+  box-shadow: 0 0 1rem var(--red-accent-low-opacity);
 }
 @media screen and (width < 900px) {
 }
