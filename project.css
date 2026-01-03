@@ -17,8 +17,8 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 0 0 20px var(--box-shadow-color), 0 0 10px var(--box-shadow-color),
-    0 0 30px var(--box-shadow-color);
+  box-shadow: 0 0 0.5rem var(--box-shadow-color),
+    0 0 1rem var(--box-shadow-color), 0 0 2rem var(--box-shadow-color);
 }
 
 .project-info {
@@ -52,6 +52,11 @@
 .project-card .project-info a i {
   color: var(--button-color);
   font-size: 2rem;
+  transition: color 0.2s ease-in;
+}
+
+.project-card .project-info a i:hover {
+  color: var(--red-accent);
 }
 
 @media screen and (width < 960px) {

@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   margin: 15rem 0;
+  position: relative;
 }
 
 .container {
@@ -60,6 +61,11 @@
 .media a i {
   font-size: 2rem;
   color: var(--button-color);
+  transition: color 0.2s ease-in;
+}
+
+.media a i:hover {
+  color: var(--red-accent);
 }
 
 .intro p {

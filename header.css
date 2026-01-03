@@ -1,20 +1,20 @@
 header {
   width: 100%;
-  position: -webkit-fixed;
   position: fixed;
   z-index: 1000;
   top: 0;
-  background-color: var(--glass-effect-color);
-  /* background-color:rgba(150, 150, 150, 0.35); */
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-bottom: 1px solid var(--bar-color);
-  border-radius: 0 0 1rem 1rem;
 }
 
 nav {
   width: 100%;
-  padding: 1rem 0;
+  max-width: 50vw;
+  margin: auto;
+  padding: 1rem;
+  background-color: var(--glass-effect-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-bottom: 1px solid var(--bar-color);
+  border-radius: 0 0 1rem 1rem;
 }
 
 ul {
@@ -24,7 +24,6 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 0 1rem;
 }
 
 ul .kr {
@@ -34,7 +33,6 @@ ul .kr {
 ul .kr a {
   color: var(--red-accent);
   font-size: clamp(1rem, 1.5vw, 2rem);
-  position: relative;
 }
 
 nav ul .li-item a {
@@ -47,15 +45,15 @@ nav ul .li-item a::before {
   content: "";
   background-color: var(--red-accent);
   position: absolute;
-  bottom: 0;
-  left: -0.2rem;
+  bottom: -0.1rem;
+  left: 0;
   height: 2px;
   width: 0%;
   transition: width 0.3s ease-out;
 }
 
 nav ul .li-item a:hover::before {
-  width: 105%;
+  width: 100%;
 }
 
 @media screen and (width < 450px) {

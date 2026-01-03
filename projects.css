@@ -6,8 +6,8 @@
   --button-color: #333333;
   --font-color: #f2f2f2;
   --bar-color: rgba(255, 255, 255, 0.15);
-  /* --bar-color:#333333; */
   --red-accent: crimson;
+  --red-accent-low-opacity: rgba(220, 20, 60, 0.15);
   --box-shadow-color: rgba(150, 150, 150, 0.01);
 
   --font-size-1: 3rem;
@@ -30,8 +30,8 @@
   --button-color: #005238;
   --font-color: #0e0e0e;
   --bar-color: rgba(0, 119, 255, 0.25);
-  /* --bar-color:#333333; */
   --red-accent: crimson;
+  --red-accent-low-opacity: rgba(220, 20, 60, 0.15);
   --box-shadow-color: rgba(0, 0, 0, 0.04);
 }
 
@@ -59,25 +59,23 @@ body {
   color: var(--font-color);
   text-shadow: 1px 1px 0px var(--text-shadow-color);
   font-size: calc(var(--p));
-  /* padding: 0 25vw; */
-  padding: 0 30vw;
 }
 
 header {
   width: 100%;
-  align-self: flex-start;
-  position: sticky;
-  z-index: 100;
+  position: fixed;
+  z-index: 1000;
   top: 0;
 }
 
 nav {
   width: 100%;
-  padding: 1rem 0;
+  max-width: 50vw;
+  margin: auto;
+  padding: 1rem;
   background-color: var(--glass-effect-color);
-  /* background-color:rgba(150, 150, 150, 0.35); */
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-bottom: 1px solid var(--bar-color);
   border-radius: 0 0 1rem 1rem;
 }
@@ -89,7 +87,6 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 0 1rem;
 }
 
 ul .kr {
@@ -99,7 +96,6 @@ ul .kr {
 ul .kr a {
   color: var(--red-accent);
   font-size: clamp(1rem, 1.5vw, 2rem);
-  position: relative;
 }
 
 nav ul .li-item a {
@@ -112,15 +108,15 @@ nav ul .li-item a::before {
   content: "";
   background-color: var(--red-accent);
   position: absolute;
-  bottom: 0;
-  left: -0.2rem;
+  bottom: -0.1rem;
+  left: 0;
   height: 2px;
   width: 0%;
   transition: width 0.3s ease-out;
 }
 
 nav ul .li-item a:hover::before {
-  width: 105%;
+  width: 100%;
 }
 
 main {
@@ -128,7 +124,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5rem 0;
+  padding: 5rem 25vw;
 }
 
 .title {
@@ -149,8 +145,8 @@ main {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 0 0 20px var(--box-shadow-color), 0 0 10px var(--box-shadow-color),
-    0 0 30px var(--box-shadow-color);
+  box-shadow: 0 0 0.5rem var(--box-shadow-color),
+    0 0 1rem var(--box-shadow-color), 0 0 2rem var(--box-shadow-color);
 }
 
 .project-info {
@@ -161,7 +157,7 @@ main {
   gap: 0.5rem;
   border-top: 1px solid var(--bar-color);
   margin: 2rem;
-  padding:2rem 0 0 0 ;
+  padding: 2rem 0 0 0;
 }
 
 .project-card .project-info h3 {
@@ -184,6 +180,11 @@ main {
 .project-card .project-info a i {
   color: var(--button-color);
   font-size: 2rem;
+  transition: color 0.2s ease-in;
+}
+
+.project-card .project-info a i:hover {
+  color: var(--red-accent);
 }
 
 @media screen and (width < 1200px) {

@@ -6,8 +6,8 @@
   --button-color: #333333;
   --font-color: #f2f2f2;
   --bar-color: rgba(255, 255, 255, 0.15);
-  /* --bar-color:#333333; */
   --red-accent: crimson;
+  --red-accent-low-opacity: rgba(220, 20, 60, 0.15);
   --box-shadow-color: rgba(150, 150, 150, 0.01);
 
   --font-size-1: 3rem;
@@ -30,8 +30,8 @@
   --button-color: #005238;
   --font-color: #0e0e0e;
   --bar-color: rgba(0, 119, 255, 0.25);
-  /* --bar-color:#333333; */
   --red-accent: crimson;
+  --red-accent-low-opacity: rgba(220, 20, 60, 0.15);
   --box-shadow-color: rgba(0, 0, 0, 0.04);
 }
 
@@ -52,61 +52,14 @@ img {
 html {
   scroll-behavior: smooth;
 }
-body, html {
-  overflow-x: clip; /* This prevents horizontal scroll without breaking sticky */
-}
 
 body {
   font-family: Arial;
   background-color: var(--bg-color);
   color: var(--font-color);
   font-size: calc(var(--p));
-  padding: 0 30vw;
 }
 
-@media screen and (width < 1200px) {
-  body {
-    padding: 0 22vw;
-  }
-}
-
-@media screen and (width < 1100px) {
-  body {
-    padding: 0 20vw;
-  }
-}
-@media screen and (width < 1000px) {
-  body {
-    padding: 0 18vw;
-  }
-}
-@media screen and (width < 900px) {
-  body {
-    padding: 0 16vw;
-  }
-}
-@media screen and (width < 800px) {
-  body {
-    padding: 0 14vw;
-  }
-}
-@media screen and (width < 700px) {
-  body {
-    padding: 0 12vw;
-  }
-}
-@media (width < 600px) {
-  body {
-    padding: 0 10vw;
-  }
-}
-@media (width < 500px) {
-  body {
-    padding: 0 7vw;
-  }
-}
-@media (width < 400px) {
-  body {
-    padding: 0 4vw;
-  }
+main {
+  padding: 0 25vw;
 }
