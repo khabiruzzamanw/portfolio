@@ -17,13 +17,14 @@ theme.addEventListener("click", () => {
   if (themeData === "dark") {
     // document.body.removeAttribute("class", "dark");
     document.body.setAttribute("class", "light");
-    theme.src = "images/lightMode.svg";
+    theme.src = "/images/lightMode.svg";
   } else {
     document.body.setAttribute("class", "dark");
-    theme.src = "images/darkMode.svg";
+    theme.src = "/images/darkMode.svg";
   }
 
   console.log(document.body.classList);
 });
+
 
 //-----------------------------------------------------------//---------------------------------------------------------------//
