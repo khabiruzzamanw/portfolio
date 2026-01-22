@@ -4,7 +4,6 @@
 //this section is for the theme changer
 
 const theme = document.getElementById("theme");
-let imgSrc = theme.src;
 
 theme.addEventListener("mouseover", () => {
   theme.style.cursor = "pointer";
@@ -12,15 +11,16 @@ theme.addEventListener("mouseover", () => {
 
 theme.addEventListener("click", () => {
   // document.body.classList.toggle("lightMode");
-  let themeData = document.body.getAttribute("class");
+  let themeData = document.body.classList;
 
-  if (themeData === "dark") {
+  if (themeData.contains('dark')) {
     // document.body.removeAttribute("class", "dark");
-    document.body.setAttribute("class", "light");
-    theme.src = "/images/lightMode.svg";
+    themeData.replace('dark','light');
+    theme.src = "images/lightMode.svg";
+
   } else {
-    document.body.setAttribute("class", "dark");
-    theme.src = "/images/darkMode.svg";
+    themeData.replace('light','dark');
+    theme.src = "images/darkMode.svg";
   }
 
   console.log(document.body.classList);
