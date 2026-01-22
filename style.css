@@ -460,6 +460,7 @@ nav ul .li-item a:hover::before {
 .project-card .project-info h3 {
   margin-bottom: 2rem;
   font-size: 1.5rem;
+  color:var(--red-accent);
 }
 
 .project-card .project-info p {
