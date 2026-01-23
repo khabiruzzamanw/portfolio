@@ -54,14 +54,18 @@ html {
 }
 
 body {
+  max-width: 100%;
   font-family: Arial;
   background-color: var(--bg-color);
   color: var(--font-color);
   font-size: calc(var(--p));
+  overflow-x: hidden;
 }
 
 main {
   padding: 0 25vw;
+  overflow-x: hidden;
+
 }
 
 @media screen and (max-width : 780px) {
@@ -97,7 +101,7 @@ nav {
 }
 
 ul {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   list-style: none;
   justify-content: center;
@@ -141,6 +145,13 @@ nav ul .li-item a:hover::before {
   }
 }
 
+@media screen and (max-width : 780px) {
+  nav{
+    max-width:80vw;
+  }
+  
+}
+
 /*-----------------------------------------------------------------------------------------------X----------------------------------------------------------------------------*/
 
 
@@ -151,7 +162,7 @@ nav ul .li-item a:hover::before {
 
 
 .hero {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,91 +248,18 @@ nav ul .li-item a:hover::before {
   font-size: clamp(1rem, 1.5vw, 1.8rem);
 }
 
-@media screen and (width < 1100px) {
-  .hero {
-    margin: 12rem 0;
-  }
 
-  .container {
-    padding: 9rem 0 2rem;
-    gap: 9rem;
-  }
-}
-
-@media screen and (width < 1000px) {
-  .hero {
-    margin: 10rem 0;
-  }
-
-  .container {
-    padding: 8rem 0 2rem;
-    gap: 8rem;
-  }
-}
-
-@media screen and (width < 900px) {
-  .hero {
-    margin: 8rem 0;
-  }
-
-  .container {
-    padding: 7rem 0 2rem;
-    gap: 7rem;
-  }
-}
-
-@media screen and (width < 800px) {
-  .hero {
-    margin: 6rem 0;
-  }
-
-  .container {
-    padding: 6rem 0 2rem;
-    gap: 6rem;
-  }
-}
-
-@media screen and (width < 700px) {
-  .hero {
-    margin: 4rem 0;
-  }
-
-  .container {
-    padding: 5rem 0 2rem;
-    gap: 5rem;
-  }
-}
-
-@media screen and (width < 600px) {
-  /* .hero {
-    margin: 3rem 0;
-  } */
-  /* .container {
-  padding:2rem 0;
-
-  } */
-}
-
-@media screen and (width < 500px) {
-  /* .hero {
-    margin: 2rem 0;
-  } */
-  /* .container {
-  padding:2rem 0;
-
-  } */
-}
 
 
 /*----------------------------------------------------------------------------this section is for about-----------------------------------------------------------------------*/
 
 .about-section {
-  width: 100%;
+  max-width: 100%;
   margin: 10rem 0;
 }
 
 .about-container {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   padding: 1rem;
@@ -431,7 +369,7 @@ nav ul .li-item a:hover::before {
 
 
 .project-section {
-  width: 100%;
+  max-width: 100%;
   margin: 10rem 0;
 }
 
@@ -507,7 +445,7 @@ nav ul .li-item a:hover::before {
 
 
 .contact-section {
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 5rem;
 }
 
