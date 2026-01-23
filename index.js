@@ -10,11 +10,9 @@ theme.addEventListener("mouseover", () => {
 });
 
 theme.addEventListener("click", () => {
-  // document.body.classList.toggle("lightMode");
   let themeData = document.body.classList;
 
   if (themeData.contains('dark')) {
-    // document.body.removeAttribute("class", "dark");
     themeData.replace('dark', 'light');
     theme.src = "images/lightMode.svg";
 
