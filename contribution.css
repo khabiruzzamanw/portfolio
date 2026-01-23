@@ -54,11 +54,12 @@ html {
 }
 
 body {
+  max-width: 100%;
   font-family: Arial;
   background-color: var(--bg-color);
   color: var(--font-color);
-  text-shadow: 1px 1px 0px var(--text-shadow-color);
   font-size: calc(var(--p));
+  overflow-x: hidden;
 }
 
 header {
@@ -81,7 +82,7 @@ nav {
 }
 
 ul {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   list-style: none;
   justify-content: center;
@@ -119,11 +120,27 @@ nav ul .li-item a:hover::before {
   width: 100%;
 }
 
-@media screen and (width < 800px) {
-}
-
 @media screen and (width < 450px) {
   ul {
     gap: 1rem;
   }
+}
+
+@media screen and (max-width : 1024px) {
+  nav {
+    max-width: 70vw;
+  }
+
+}
+@media screen and (max-width : 780px) {
+ nav {
+    max-width: 80vw;
+  }
+
+}
+@media screen and (max-width : 500px) {
+  nav {
+    max-width: 95vw;
+  }
+
 }

@@ -68,11 +68,23 @@ main {
 
 }
 
+@media screen and (max-width : 1024px) {
+  main {
+    padding: 0 15vw;
+  }
+
+}
 @media screen and (max-width : 780px) {
-  main{
+  main {
+    padding: 0 10vw;
+  }
+
+}
+@media screen and (max-width : 500px) {
+  main {
     padding: 0 5vw;
   }
-  
+
 }
 
 
@@ -145,11 +157,23 @@ nav ul .li-item a:hover::before {
   }
 }
 
-@media screen and (max-width : 780px) {
-  nav{
-    max-width:80vw;
+@media screen and (max-width : 1024px) {
+  nav {
+    max-width: 70vw;
   }
-  
+
+}
+@media screen and (max-width : 780px) {
+ nav {
+    max-width: 80vw;
+  }
+
+}
+@media screen and (max-width : 500px) {
+  nav {
+    max-width: 95vw;
+  }
+
 }
 
 /*-----------------------------------------------------------------------------------------------X----------------------------------------------------------------------------*/
@@ -163,10 +187,10 @@ nav ul .li-item a:hover::before {
 
 .hero {
   max-width: 100%;
+  min-height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15rem 0;
   position: relative;
 }
 
@@ -255,7 +279,6 @@ nav ul .li-item a:hover::before {
 
 .about-section {
   max-width: 100%;
-  margin: 10rem 0;
 }
 
 .about-container {
@@ -377,7 +400,7 @@ nav ul .li-item a:hover::before {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(min(400px,100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
   gap: 2rem;
 }
 
@@ -406,7 +429,7 @@ nav ul .li-item a:hover::before {
 .project-card .project-info h3 {
   margin-bottom: 2rem;
   font-size: 1.5rem;
-  color:var(--red-accent);
+  color: var(--red-accent);
 }
 
 .project-card .project-info p {
@@ -423,13 +446,13 @@ nav ul .li-item a:hover::before {
   list-style: none;
 }
 
-.project-card .project-info a i {
+.project-card .project-info li i {
   color: var(--button-color);
   font-size: 2rem;
   transition: color 0.2s ease-in;
 }
 
-.project-card .project-info a i:hover {
+.project-card .project-info li i:hover {
   color: var(--red-accent);
 }
 

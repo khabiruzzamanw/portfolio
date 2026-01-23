@@ -54,11 +54,12 @@ html {
 }
 
 body {
+  max-width: 100%;
   font-family: Arial;
   background-color: var(--bg-color);
   color: var(--font-color);
-  text-shadow: 1px 1px 0px var(--text-shadow-color);
   font-size: calc(var(--p));
+  overflow-x: hidden;
 }
 
 header {
@@ -81,7 +82,7 @@ nav {
 }
 
 ul {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   list-style: none;
   justify-content: center;
@@ -119,22 +120,76 @@ nav ul .li-item a:hover::before {
   width: 100%;
 }
 
+@media screen and (width < 450px) {
+  ul {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width : 1024px) {
+  nav {
+    max-width: 70vw;
+  }
+
+}
+
+@media screen and (max-width : 780px) {
+  nav {
+    max-width: 80vw;
+  }
+
+}
+
+@media screen and (max-width : 500px) {
+  nav {
+    max-width: 95vw;
+  }
+
+}
+
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem 25vw;
+  padding: 0 25vw;
+  margin: 10rem 0;
+  overflow-x: hidden;
+
+}
+
+@media screen and (max-width : 1024px) {
+  main {
+    padding: 0 15vw;
+
+  }
+
+}
+
+@media screen and (max-width : 780px) {
+  main {
+    padding: 0 10vw;
+    margin: 6rem 0;
+
+  }
+
+}
+
+@media screen and (max-width : 500px) {
+  main {
+    padding: 0 5vw;
+    margin: 4rem 0;
+
+  }
+
 }
 
 .title {
   margin: 2rem 0 5rem;
+  text-align: center;
+  color: var(--red-accent);
 }
 
 .container {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
   gap: 2rem;
 }
 
@@ -163,85 +218,28 @@ main {
 .project-card .project-info h3 {
   margin-bottom: 2rem;
   font-size: 1.5rem;
+  color: var(--red-accent);
 }
 
 .project-card .project-info p {
   padding: 0 1rem 1rem 0;
 }
 
-.project-card .project-info a {
-  width: 100%;
+.project-card .project-info li {
   color: var(--font-color);
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 1.25rem;
+  list-style: none;
 }
-.project-card .project-info a i {
+
+.project-card .project-info li i {
   color: var(--button-color);
   font-size: 2rem;
   transition: color 0.2s ease-in;
 }
 
-.project-card .project-info a i:hover {
+.project-card .project-info li i:hover {
   color: var(--red-accent);
-}
-
-@media screen and (width < 1200px) {
-  body {
-    padding: 0 22vw;
-  }
-}
-
-@media screen and (width < 1100px) {
-  body {
-    padding: 0 20vw;
-  }
-}
-@media screen and (width < 1000px) {
-  body {
-    padding: 0 18vw;
-  }
-}
-@media screen and (width < 900px) {
-  body {
-    padding: 0 16vw;
-  }
-}
-@media screen and (width < 960px) {
-  .project-card {
-    flex-direction: column;
-  }
-}
-@media screen and (width < 800px) {
-  body {
-    padding: 0 14vw;
-  }
-}
-@media screen and (width < 700px) {
-  body {
-    padding: 0 12vw;
-  }
-}
-@media (width < 600px) {
-  body {
-    padding: 0 10vw;
-  }
-}
-@media (width < 500px) {
-  body {
-    padding: 0 7vw;
-  }
-}
-
-@media screen and (width < 450px) {
-  ul {
-    gap: 1rem;
-  }
-}
-
-@media (width < 400px) {
-  body {
-    padding: 0 4vw;
-  }
 }
