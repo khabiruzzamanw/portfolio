@@ -132,12 +132,14 @@ nav ul .li-item a:hover::before {
   }
 
 }
+
 @media screen and (max-width : 780px) {
- nav {
+  nav {
     max-width: 80vw;
   }
 
 }
+
 @media screen and (max-width : 500px) {
   nav {
     max-width: 95vw;

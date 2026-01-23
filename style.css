@@ -74,12 +74,14 @@ main {
   }
 
 }
+
 @media screen and (max-width : 780px) {
   main {
     padding: 0 10vw;
   }
 
 }
+
 @media screen and (max-width : 500px) {
   main {
     padding: 0 5vw;
@@ -163,12 +165,14 @@ nav ul .li-item a:hover::before {
   }
 
 }
+
 @media screen and (max-width : 780px) {
- nav {
+  nav {
     max-width: 80vw;
   }
 
 }
+
 @media screen and (max-width : 500px) {
   nav {
     max-width: 95vw;
