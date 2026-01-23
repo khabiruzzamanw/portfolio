@@ -467,8 +467,8 @@ nav ul .li-item a:hover::before {
   padding: 0 1rem 1rem 0;
 }
 
-.project-card .project-info a {
-  width: 100%;
+.project-card .project-info li {
+  /* width: 100%; */
   color: var(--font-color);
   display: flex;
   justify-content: flex-start;
