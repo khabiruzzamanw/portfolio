@@ -377,6 +377,7 @@ nav ul .li-item a:hover::before {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(400px,100%), 1fr));
   gap: 2rem;
 }
 
@@ -419,6 +420,7 @@ nav ul .li-item a:hover::before {
   justify-content: flex-start;
   align-items: center;
   gap: 1.25rem;
+  list-style: none;
 }
 
 .project-card .project-info a i {
