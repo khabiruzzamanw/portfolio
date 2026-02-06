@@ -95,10 +95,10 @@ ul .kr {
 }
 
 ul .kr a {
+  font-family: "Meow Script", cursive;
   color: var(--red-accent);
-  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
-
 nav ul .li-item a {
   color: var(--font-color);
   font-size: clamp(0.8rem, 0.85vw, 1rem);
