@@ -1,115 +1,60 @@
 
-themeChanger ();
+themeChanger();
 sendEmail();
 
-//this section is for the theme changer
 
 
-function themeChanger (){
+
+
+
+
+
+
+
+
+function themeChanger() {
 
   const theme = document.getElementById("theme");
+  let imgSrc = theme.src;
 
-theme.addEventListener("mouseover", () => {
-  theme.style.cursor = "pointer";
-});
+  theme.addEventListener("mouseover", () => {
+    theme.style.cursor = "pointer";
+  });
 
-theme.addEventListener("click", () => {
-  let themeData = document.body.classList;
+  theme.addEventListener("click", () => {
+    let themeData = document.body.getAttribute("class");
 
-  if (themeData.contains('dark')) {
-    themeData.replace('dark', 'light');
-    theme.src = "images/lightMode.svg";
+    if (themeData === "dark") {
+      document.body.setAttribute("class", "light");
+      theme.src = "images/lightMode.svg";
+    } else {
+      document.body.setAttribute("class", "dark");
+      theme.src = "images/darkMode.svg";
+    }
 
-  } else {
-    themeData.replace('light', 'dark');
-    theme.src = "images/darkMode.svg";
-  }
-
-  // console.log(document.body.classList);
-});
-
-}
-
-
-function sendEmail(){
-  const emailAddress = document.querySelector("#leaveEmail");
-  const emailBody = document.querySelector("#leaveMessage");
-  const messageSendButton = document.querySelector("#messageSendButton");
-
-  messageSendButton.addEventListener('click',()=>{
-    const email = emailAddress.value ;
-    const emailmessage = emailBody.value ;
-
-    console.log(email);
-    console.log(emailmessage);
-    
-  })
-}
+  });
+};
 
 
 
 
-//-----------------------------------------------------------//---------------------------------------------------------------//
+function sendEmail() {
 
+  (function () {
+    emailjs.init("IQt8_0tK08kcpLSvW");
+  })();
 
-//===========================================================this section is for links==========================================================================
+  const leaveEmail = document.getElementById("leaveEmail");
+  const leaveMessage = document.getElementById("leaveMessage");
+  const messageSendButton = document.getElementById("messageSendButton");
 
-const github = document.querySelector('#github');
+  messageSendButton.addEventListener('click', () => {
 
-github.href = "https://github.com/khabiruzzaman-codes";
+    let emailobj = {
+      email: leaveEmail.value,
+      message: leaveMessage.value
+    };
 
-const linkedin = document.querySelector('#linkedin');
-
-linkedin.href = "https://www.linkedin.com/in/khabiruzzaman-codes";
-
-const twitter = document.querySelector('#twitter');
-
-twitter.href = "https://x.com/khabiruzzaman_c";
-
-const instagram = document.querySelector('#instagram');
-
-instagram.href = "https://www.instagram.com/khabiruzzaman.codes";
-
-const youtube = document.querySelector('#youtube');
-
-youtube.href = "https://www.youtube.com/@khabiruzzaman.codes";
-
-const email = document.querySelector('#email');
-
-email.href = "khabiruzzaman.codes@gmail.com";
-
-
-
-const githubWeatherCheckerRepo = document.querySelector("#githubWeatherCheckerRepo");
-
-githubWeatherCheckerRepo.href = "https://github.com/khabiruzzamanw/weatherChecker";
-
-
-const githubJournixRepo = document.querySelector("#githubJournixRepo");
-
-githubJournixRepo.href = "https://github.com/khabiruzzamanw/journix";
-
-
-const githubGuessTheNumberRepo = document.querySelector("#githubGuessTheNumberRepo");
-
-githubGuessTheNumberRepo.href = "";
-
-
-
-
-const weatherChecker = document.querySelector("#weatherChecker");
-
-weatherChecker.href = "https://khabiruzzamanw.github.io/weatherChecker";
-
-
-const journix = document.querySelector("#journix");
-
-journix.href = "https://khabiruzzamanw.github.io/journix";
-
-
-const guessTheNumber = document.querySelector("#guessTheNumber");
-
-guessTheNumber.href = "";
-
-
-//---------------------------------------------------------------//
+    emailjs.send("service_cpmtp1k", "template_85gsrz9", emailobj);
+  });
+};
