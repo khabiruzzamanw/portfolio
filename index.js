@@ -1,9 +1,13 @@
 
-
+themeChanger ();
+sendEmail();
 
 //this section is for the theme changer
 
-const theme = document.getElementById("theme");
+
+function themeChanger (){
+
+  const theme = document.getElementById("theme");
 
 theme.addEventListener("mouseover", () => {
   theme.style.cursor = "pointer";
@@ -21,8 +25,28 @@ theme.addEventListener("click", () => {
     theme.src = "images/darkMode.svg";
   }
 
-  console.log(document.body.classList);
+  // console.log(document.body.classList);
 });
+
+}
+
+
+function sendEmail(){
+  const emailAddress = document.querySelector("#leaveEmail");
+  const emailBody = document.querySelector("#leaveMessage");
+  const messageSendButton = document.querySelector("#messageSendButton");
+
+  messageSendButton.addEventListener('click',()=>{
+    const email = emailAddress.value ;
+    const emailmessage = emailBody.value ;
+
+    console.log(email);
+    console.log(emailmessage);
+    
+  })
+}
+
+
 
 
 //-----------------------------------------------------------//---------------------------------------------------------------//
