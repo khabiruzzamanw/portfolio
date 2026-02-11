@@ -11,28 +11,34 @@ sendEmail();
 
 
 
-
 function themeChanger() {
 
   const theme = document.getElementById("theme");
-  let imgSrc = theme.src;
 
-  theme.addEventListener("mouseover", () => {
-    theme.style.cursor = "pointer";
-  });
+  document.body.classList.add(localStorage.getItem("userTheme")) || "dark";
+  theme.src = localStorage.getItem("themeImg") || "images/darkMode.svg";
 
   theme.addEventListener("click", () => {
-    let themeData = document.body.getAttribute("class");
+    let themeData = document.body.classList;
 
-    if (themeData === "dark") {
-      document.body.setAttribute("class", "light");
+    if (themeData.contains("dark")) {
+
+      themeData.replace("dark", "light");
       theme.src = "images/lightMode.svg";
+      localStorage.setItem("userTheme", "light");
+      localStorage.setItem("themeImg", "images/lightMode.svg");
+
     } else {
-      document.body.setAttribute("class", "dark");
+
+      themeData.replace("light", "dark");
       theme.src = "images/darkMode.svg";
+      localStorage.setItem("userTheme", "dark");
+      localStorage.setItem("themeImg", "images/darkMode.svg");
+
     }
 
   });
+
 };
 
 
@@ -54,6 +60,9 @@ function sendEmail() {
       email: leaveEmail.value,
       message: leaveMessage.value
     };
+
+    leaveEmail.value = '';
+    leaveMessage.value = '';
 
     emailjs.send("service_cpmtp1k", "template_85gsrz9", emailobj);
   });

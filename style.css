@@ -277,6 +277,10 @@ nav ul .li-item a:hover::before {
   font-size: clamp(1rem, 1.5vw, 1.8rem);
 }
 
+.theme:hover{
+  cursor: pointer;
+}
+
 
 
 
