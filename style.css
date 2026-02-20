@@ -154,6 +154,10 @@ nav ul .li-item a:hover::before {
   width: 100%;
 }
 
+#theme {
+  cursor: pointer;
+}
+
 @media screen and (width < 450px) {
   ul {
     gap: 1rem;

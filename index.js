@@ -1,28 +1,75 @@
+themeChanger();
+
+
+
+
+
+
+
+
+function themeChanger() {
+
+  const theme = document.getElementById("theme");
+
+  document.body.classList.add(localStorage.getItem("userTheme")) || "dark";
+  theme.src = localStorage.getItem("themeImg") || "images/darkMode.svg";
+
+  theme.addEventListener("click", () => {
+    let themeData = document.body.classList;
+
+    if (themeData.contains("dark")) {
+
+      themeData.replace("dark", "light");
+      theme.src = "images/lightMode.svg";
+      localStorage.setItem("userTheme", "light");
+      localStorage.setItem("themeImg", "images/lightMode.svg");
+
+    } else {
+
+      themeData.replace("light", "dark");
+      theme.src = "images/darkMode.svg";
+      localStorage.setItem("userTheme", "dark");
+      localStorage.setItem("themeImg", "images/darkMode.svg");
+
+    }
+
+  });
+
+};
+
+
+
+
+
+
+
+
+
 
 
 
 //this section is for the theme changer
 
-const theme = document.getElementById("theme");
+// const theme = document.getElementById("theme");
 
-theme.addEventListener("mouseover", () => {
-  theme.style.cursor = "pointer";
-});
+// theme.addEventListener("mouseover", () => {
+//   theme.style.cursor = "pointer";
+// });
 
-theme.addEventListener("click", () => {
-  let themeData = document.body.classList;
+// theme.addEventListener("click", () => {
+//   let themeData = document.body.classList;
 
-  if (themeData.contains('dark')) {
-    themeData.replace('dark', 'light');
-    theme.src = "images/lightMode.svg";
+//   if (themeData.contains('dark')) {
+//     themeData.replace('dark', 'light');
+//     theme.src = "images/lightMode.svg";
 
-  } else {
-    themeData.replace('light', 'dark');
-    theme.src = "images/darkMode.svg";
-  }
+//   } else {
+//     themeData.replace('light', 'dark');
+//     theme.src = "images/darkMode.svg";
+//   }
 
-  console.log(document.body.classList);
-});
+//   console.log(document.body.classList);
+// });
 
 
 //-----------------------------------------------------------//---------------------------------------------------------------//
@@ -66,9 +113,9 @@ const githubJournixRepo = document.querySelector("#githubJournixRepo");
 githubJournixRepo.href = "https://github.com/khabiruzzamanw/journix";
 
 
-const githubGuessTheNumberRepo = document.querySelector("#githubGuessTheNumberRepo");
+const githubStreamRepo = document.querySelector("#githubStreamRepo");
 
-githubGuessTheNumberRepo.href = "";
+githubStreamRepo.href = "https://github.com/khabiruzzamanw/stream";
 
 
 
@@ -83,9 +130,9 @@ const journix = document.querySelector("#journix");
 journix.href = "https://khabiruzzamanw.github.io/journix";
 
 
-const guessTheNumber = document.querySelector("#guessTheNumber");
+const stream = document.querySelector("#stream");
 
-guessTheNumber.href = "";
+stream.href = "https://khabiruzzamanw.github.io/stream";
 
 
 //---------------------------------------------------------------//
