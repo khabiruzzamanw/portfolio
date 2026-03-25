@@ -4,12 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <link rel="stylesheet" href="style.css">
   <title>Portfolio</title>
 </head>
 
@@ -36,11 +32,11 @@
         </li>
 
         <li class="link toGO ">
-          <a href="projects.html">Projects</a>
+          <a href="work.html">Work</a>
         </li>
 
         <li class="link toGO ">
-          <a href="contribution.html">Contribution</a>
+          <a href="activity.html">Activity</a>
         </li>
 
         <li class="">
@@ -69,18 +65,21 @@
         <div class="introduction">
           <p>Khabiruzzaman.&#60;&sol;br&#62;</p>
           <p>
-            FullStack developer.
+            Full-Stack Developer. UI Craftsman.
+            <span class="availability">
+              <span class="availabilityDot"></span>
+              <span class="availabilityInfo">
+                Available for work
+              </span>
+            </span>
           </p>
         </div>
 
         <div class="about">
           <p>
-            Am Front-End Developer passionate about building beautiful,
-            functional, and user-centric web experiences. I specialize in
-            turning design concepts into high-performance, responsive code
-            using Html (5), JavaScript , and modern CSS. Constantly seeking
-            opportunities to learn new technologies and deliver exceptional
-            digital solutions.
+            Tackles web development challenges end-to-end, combining responsive front-end expertise (HTML5, CSS,
+            JavaScript) with back-end implementation. Solves complex workflows from UI to database. Full-stack approach
+            for production-ready applications.
           </p>
         </div>
 
@@ -107,7 +106,7 @@
 
         <div class="mainPageButtons">
           <a href="#" class="resumeButton">Download resume</a>
-          <a href="#" class="getInTouchButton">Get in touch</a>
+          <a href="#contact" class="getInTouchButton">Get in touch</a>
         </div>
 
       </div>
@@ -128,6 +127,15 @@
           </div>
 
           <div class="cardDetails">
+            <p class="projectGenre">
+              <span>
+                Web-App
+              </span>
+              |
+              <span>
+                productivity
+              </span>
+            </p>
             <p class="cardTitle">
               VeilLog
             </p>
@@ -158,6 +166,15 @@
           </div>
 
           <div class="cardDetails">
+            <p class="projectGenre">
+              <span>
+                Web-App
+              </span>
+              |
+              <span>
+                Entertainment
+              </span>
+            </p>
             <p class="cardTitle">
               Stream
             </p>
@@ -189,12 +206,20 @@
           </div>
 
           <div class="cardDetails">
+            <p class="projectGenre">
+              <span>
+                Web-App
+              </span>
+              |
+              <span>
+                Unknown
+              </span>
+            </p>
             <p class="cardTitle">
-              project title
+              Coming Soon
             </p>
             <p class="cardDescription">
-              project description Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, et?Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Tempora, porro.
+              Something new is being built. Stay tuned.
             </p>
 
             <div class="cardLinks">
@@ -215,10 +240,42 @@
     </section>
 
 
+    <section class="contact" id="contact">
+      <p class="contactTitle">Let's talk
+        <span class="line">
+
+        </span>
+      </p>
+      <div class="contactWrapper">
+        <div class="contactDescription">
+          <p>
+            Got a project in mind?
+          </p>
+          <p>Let's build something remarkable together.</p>
+        </div>
+
+        <div class="toContact">
+          <input type="text" name="" id="senderName" placeholder="Your name" class="inputField">
+          <input type="email" name="" id="senderEmail" placeholder="your@email.com" class="inputField">
+          <textarea name="" id="senderMessage" placeholder="Tell me about your project…" class="inputField"></textarea>
+          <button type="submit" class="contactSend"> Send message<i class="ti ti-send"></i></button>
+        </div>
+      </div>
+
+    </section>
+
+
   </main>
 
   <footer>
-    <p>copyright is reserved &copy; Khabiruzzaman</p>
+    <p>copyright is reserved &copy; Khabiruzzaman
+      <span class="availability">
+        <span class="availabilityDot"></span>
+        <span class="availabilityInfo">
+          Open for work
+        </span>
+      </span>
+    </p>
   </footer>
 
 
