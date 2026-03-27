@@ -40,7 +40,7 @@
 .light {
 
   --bg: #f7f7f5;
-    --blured: rgba(255, 255, 255, 0.65);
+  --blured: rgba(255, 255, 255, 0.65);
   --accent: #2563eb;
   --surface: #ffffff;
   --surface-muted: #f0f0ee;
@@ -106,32 +106,6 @@ main {
   padding: 0 25vw 4rem 25vw;
   overflow-x: hidden;
 }
-
-@media screen and (max-width : 1024px) {
-  main {
-    padding: 0 15vw;
-  }
-
-}
-
-@media screen and (max-width : 780px) {
-  main {
-    padding: 0 10vw;
-  }
-
-}
-
-@media screen and (max-width : 500px) {
-  main {
-    padding: 0 5vw;
-  }
-
-}
-
-
-/*---------------------------------------------------------this section is for header or sidebar-----------------------------------------------------------*/
-
-
 
 
 header {
@@ -365,7 +339,7 @@ ul .kr {
   padding: 0.5rem;
 }
 
-.projectGenre{
+.projectGenre {
   font-size: var(--small);
 }
 
@@ -673,43 +647,57 @@ footer p {
 
 
 
+@media screen and (max-width : 768px) {
+  main {
+    padding: 0 10vw 2rem 10vw;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 600px) {
   nav {
     width: 80vw;
   }
 
+  footer {
+    padding: 1rem 10vw;
+  }
+
+}
+
+@media screen and (max-width : 480px) {
+  main {
+    padding: 0 5vw 2rem 5vw;
+  }
+
+  nav {
+    width: 90vw;
+  }
+
+  .mainPage{
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
   .projectGrid {
-    /* grid-template-rows: 1fr 1fr; */
     grid-template-columns: 1fr;
   }
 
+  .contactWrapper  {
+  flex-direction: column;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactDescription {
+width:100%;
+align-items: flex-start;
+}
+
+.toContact {
+  width: 100%;
+}
+
+
+  footer {
+    padding: 1rem 5vw;
+  }
 }
