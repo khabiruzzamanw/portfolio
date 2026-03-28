@@ -153,6 +153,7 @@ nav ul li a:hover {
   align-items: center;
   width: 48px;
   height: 48px;
+  border: 1px solid var(--border);
   border-radius: 50%;
   overflow: hidden;
 }
