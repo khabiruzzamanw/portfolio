@@ -1,5 +1,4 @@
 :root {
-
   --bg: #080808;
   --blured: rgba(0, 0, 0, 0.65);
 
@@ -32,13 +31,9 @@
 
   --occupied: green;
   --unoccupied: red;
-
-
 }
 
-
 .light {
-
   --bg: #f7f7f5;
   --blured: rgba(255, 255, 255, 0.65);
   --accent: #2563eb;
@@ -64,12 +59,9 @@
   --medium: 14px;
   --small: 10px;
 
-
   --occupied: green;
   --unoccupied: red;
-
 }
-
 
 *,
 *::after,
@@ -98,15 +90,15 @@ body {
   color: var(--text-muted);
   font-size: var(--medium);
   font-family: sans-serif;
-  transition: background 0.2s ease-in, color 0.2s ease-in;
+  transition:
+    background 0.2s ease-in,
+    color 0.2s ease-in;
 }
-
 
 main {
   padding: 0 25vw 4rem 25vw;
   overflow-x: hidden;
 }
-
 
 header {
   width: 100%;
@@ -228,7 +220,6 @@ ul .kr {
   column-gap: 0.75rem;
 }
 
-
 .availability {
   display: flex;
   align-items: center;
@@ -250,7 +241,6 @@ ul .kr {
 }
 
 @keyframes blink {
-
   0%,
   100% {
     opacity: 1;
@@ -303,7 +293,6 @@ ul .kr {
   background: var(--button-hovered);
 }
 
-
 .projects {
   width: 100%;
 }
@@ -349,7 +338,6 @@ ul .kr {
   margin: 0.5rem 0;
 }
 
-
 .cardDescription {
   font-size: var(--small);
 }
@@ -364,7 +352,6 @@ ul .kr {
   text-decoration: none;
 }
 
-
 .cardLinks a i {
   font-size: var(--large);
   color: var(--svg-fill);
@@ -378,7 +365,6 @@ ul .kr {
 .cardLinks a i:hover {
   color: var(--accent);
 }
-
 
 .contact {
   width: 100%;
@@ -415,7 +401,6 @@ ul .kr {
   flex-direction: column;
   justify-content: center;
   row-gap: 1rem;
-  ;
 }
 
 .contactDescription :nth-child(1) {
@@ -487,7 +472,6 @@ ul .kr {
   border-color: var(--border);
 }
 
-
 .toast {
   position: fixed;
   z-index: 1000;
@@ -498,7 +482,6 @@ ul .kr {
   border-left: 4px solid var(--border);
   animation: toastAnimation 5s ease-in-out both;
 }
-
 
 /* @keyframes toastUp {
   0% { opacity: 0; transform: translateX(18px); }
@@ -527,103 +510,6 @@ ul .kr {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
   width: 100%;
   padding: 1rem 25vw;
@@ -638,16 +524,7 @@ footer p {
   column-gap: 1rem;
 }
 
-
-
-
-
-
-
-
-
-
-@media screen and (max-width : 768px) {
+@media screen and (max-width: 768px) {
   main {
     padding: 0 10vw 2rem 10vw;
   }
@@ -659,10 +536,9 @@ footer p {
   footer {
     padding: 1rem 10vw;
   }
-
 }
 
-@media screen and (max-width : 480px) {
+@media screen and (max-width: 480px) {
   main {
     padding: 0 5vw 2rem 5vw;
   }
@@ -671,7 +547,7 @@ footer p {
     width: 90vw;
   }
 
-  .mainPage{
+  .mainPage {
     flex-direction: column;
     row-gap: 2rem;
   }
@@ -680,22 +556,21 @@ footer p {
     grid-template-columns: 1fr;
   }
 
-  .contactWrapper  {
-  flex-direction: column;
-  row-gap: 2rem;
-  justify-content: center;
-  align-items: center;
-}
+  .contactWrapper {
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
 
-.contactDescription {
-width:100%;
-align-items: flex-start;
-}
+  .contactDescription {
+    width: 100%;
+    align-items: flex-start;
+  }
 
-.toContact {
-  width: 100%;
-}
-
+  .toContact {
+    width: 100%;
+  }
 
   footer {
     padding: 1rem 5vw;
